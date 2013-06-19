@@ -1,0 +1,741 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+
+		    <div id="bloodloss">
+        		<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>           
+		        <div class="toolbar">
+                <h1>Blood Loss</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#bl-cutfor">Cutting Forceps</a></li>
+                <li class="arrow"><a id="0" href="#bl-cutfor_os">Cutting Forceps/OMNI/Spatula</a></li>
+                <li class="arrow"><a id="0" href="#bl-na">N/A</a></li>
+                <li class="arrow"><a id="0" href="#bl-tri">TriPort/EndoEye (Deflectable Tip)</a></li>
+            </ul>
+        </div>  
+                <div id="bl-cutfor">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>Cutting Forceps</h1>                                               
+                    </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>                   
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-gyn">GYN Oncology</a></li>
+                        <li class="arrow"><a id="0" href="#bl-cutfor-livres">Liver Resection</a></li>
+                        <li class="arrow"><a id="0" href="#bl-cutfor-lsh">LSH</a></li>
+                        <li class="arrow"><a id="0" href="#bl-cutfor-lshtlh">LSH/TLH/TAH</a></li>
+                        <li class="arrow"><a id="0" href="#bl-cutfor-tlh">TLH</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor_os">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        <h1>Cutting Forceps/OMNI/Spatula</h1>                                            
+                         </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor_os-gyn">GYN Oncology</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        <h1>N/A</h1>
+                        </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                    	<li class="arrow"><a id="0" href="#bl-na-lavh">LAVH</a></li>
+                        <li class="arrow"><a id="0" href="#bl-na-lshtah">LSH/TAH</a></li>
+                        <li class="arrow"><a id="0" href="#bl-na-lsh">LSH</a></li>
+                        <li class="arrow"><a id="0" href="#bl-na-tlh">TLH</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-tri">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        <h1>TriPort/EndoEye (Deflectable Tip)</h1>                       
+                        </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-tri-ls">LESS Surgery</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-cutfor-gyn">
+                    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>GYN Oncology</h1>                       
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-gyn-kle">Kleppinger</a></li>
+                        <li class="arrow"><a id="0" href="#bl-cutfor-gyn-na">N/A</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor-livres">
+                <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                       		<h1>Liver Resection</h1>
+                        	  </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-livres-cru">Crush Clamp</a></li>
+                    </ul>
+                </div>   
+				<div id="bl-cutfor-lsh">
+                <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        	<h1>LSH</h1>
+                        	  </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-lsh-na">N/A</a></li>
+                    </ul>
+                </div>    
+				<div id="bl-cutfor-lshtlh">
+                <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        	<h1>LSH/TLH/TAH</h1>
+                         </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-lshtlh-na">N/A</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-cutfor-tlh">
+                <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        	<h1>TLH</h1>
+                         </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor-tlh-kle">Kleppinger</a></li>
+                    </ul>
+                </div>    
+				<div id="bl-cutfor_os-gyn">
+                <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        	<h1>GYN Oncology</h1>
+                         </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-cutfor_os-gyn-na">N/A</a></li>
+                    </ul>
+                </div> 
+                <div id="bl-na-lavh">
+                    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LAVH</h1>
+                      </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-na-lavh-kle">Kleppinger</a></li>
+                    </ul>
+                </div> 
+                <div id="bl-na-lshtah">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LSH/TAH</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-na-lshtah-na">N/A</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-na-lsh">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LSH</h1>
+                     </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-na-lsh-na">N/A</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-na-tlh">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>TLH</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-na-tlh-davin">da Vinci</a></li>
+                    </ul>
+                </div>
+                <div id="bl-tri-ls">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LESS Surgery</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#bl-tri-ls-na">N/A</a></li>
+                    </ul>
+                </div>   
+                <div id="bl-cutfor-gyn-kle">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                     <div class="toolbar">
+                        <h1>Kleppinger</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#lee">Lee</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor-gyn-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                   </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#fanning">Fanning</a></li>
+                    </ul>
+                </div>    
+				<div id="bl-cutfor-livres-cru">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>Crush Clamp</h1>
+                   </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#corvera">Corvera</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor-lsh-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#erian">Erian</a></li>
+                    </ul>
+                </div>   
+				<div id="bl-cutfor-lshtlh-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                     </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#hoffman">Hoffman</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor-tlh-kle">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>Kleppinger</h1>
+					</div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#ouc">Ou C.</a></li>
+                    </ul>
+                </div>  
+				<div id="bl-cutfor_os-gyn-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#eisenkop">Eisenkop</a></li>
+                    </ul>
+                </div>         
+                <div id="bl-na-lavh-kle">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>Kleppinger</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#wang">Wang C.</a></li>
+                    </ul>
+                </div> 
+                <div id="bl-na-lshtah-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LSH/TAH</h1>
+                   </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#sarmini">Sarmini</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-na-lsh-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LSH</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#zupi">Zupi</a></li>
+                    </ul>
+                </div>  
+                <div id="bl-na-tlh-davin">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>da Vinci</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#shashoua">Shashoua</a></li>
+                    </ul>
+                </div>            
+                <div id="bl-tri-ls-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                        <div class="toolbar">
+                        	<h1>N/A</h1>
+                   		</div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#surico">Surico</a></li>
+                    </ul>
+                </div>                     
+        <div id="corvera">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Corvera</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>Retrospective study.</li>
+                <li>Examined the procedure for liver resection for hepatocellular cancer, comparing the PKS Cutting Forceps to the "crush clamp technique" (CCT).</li>
+                <li>Five (5) patients underwent resection using the Gyrus Cutting Forceps and five (5) patients underwent resection using the CCT.</li>
+                <li>Mean OR time:<br />
+                      - PKS Cutting Forceps - 252 min.<br />
+                      - CCT - 312 min.</li>
+                <li>Mean blood loss:<br />
+                      - PKS Cutting Forceps - 520 mL.<br />
+                      - CCT - 630 mL.</li>
+                <li>The PKS Cutting Forceps are a safe alternative to CCT for dividing the liver parenchyma in cirrhotic patients while avoiding metal clips or staples that can complicate interpretation in future follow-up imaging studies.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Corvera CU, Dada SA, Kirkland JG, Garrett RD, Way LW, Stewart L. Bipolar Pulse Coagulation For Resection Of The Cirrhotic Liver.Surg Res. 2006 Dec;136(2):  182-6.</li>
+          </ul>                      
+        </div>
+     
+        <div id="eisenkop">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Eisenkop</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                 
+            <ul class="keypoint">
+                <li>Compared laparoscopic outcomes in endometrial cancer to the historical outcomes of the same procedure performed through the "open" approach.</li>
+                <li>Retrospective study examined 200 patients undergoing the laparoscopic (TLH) and 95 patients undergoing the open (TAH) total hysterectomy with bilateral salpingoophorectomy and pelvic/aortic lymph node dissection.
+                <li>Average OR time, statistically significant:  TAH - 128.3 min.; TLH - 139.5 min.<br />
+                      - Hoffman et al. 2005 reported similar mean OR time, TLH-131 min.</li>
+                <li>Average estimated blood loss, statistically significant:  TAH - 284.7 mL.; TLH - 155.2 mL.<br />
+                      - Hoffman et al. 2005 reported similar mean blood loss:  TLH-130 mL.</li>
+                <li>Average total lymph node yield, statistically significant:  TAH - 25.7; TLH - 34.7.</li>
+                <li>Average length of hospital stay, statistically significant:  TAH/BSO/LND - 7.9 days; TLH/BSO/LND - 3.2 days.</li>
+                <li>5 mm PKS Cutting Forceps, PKS OMNI and PKS Spatula were used in this study.</li>
+                <li>Laparoscopic approach yielded larger nodal yield, reduced blood loss, less transfusions, some reduction in complications, reduced hospital stay, statistically longer but clinically equivalent operative time and some differences in pathology.</li>  
+                <li>"Operative outcomes of the current series confirm a report of pulsed bipolar cautery producing hemostasis more effectively than conventional bipolar cautery for laparoscopic radical hysterectomy." </li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Eisenkop, S.M.  Total Laparoscopic Hysterectomy With Pelvic/Aortic Lymph Node Dissection For Endometrial Cancer, A Consecutive Series Without Case Selection And Comparison To Laparotomy.  Gynecol Oncol.  2010 May; 117 (2):  p.  216-23.</li>
+          </ul>                      
+        </div>
+                
+        <div id="erian">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Erian</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Prospective study examined 400 patients that underwent laparoscopic supracervical hysterectomy (LSH).</li>
+                <li>Average OR time:  46.4 min. *OR time is calculated as the time at which CO2 was started to the closure of the laparoscopic ports.</li>
+                <li>Average uterine weight:  138 grams.</li>
+                <li>Average estimated blood loss:  126 mL.</li>
+                <li>Authors believe that the use of the PKS 45 cm Cutting Forceps contribute to reduced blood loss.  The Lap Loop was used for amputation of the uterus.</li>
+                <li>The versatile PK system allows for reduction in instrument change, helping to reduce OR time.</li> 
+                <li>For more information regarding LSH, please reference:  Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Ghomi et al. (2007); Hoffman et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Erian J., Hassan M., Pachydakis A., Chandakas S., Wissa L., Hill N.  Efficacy Of Laparoscopic Subtotal Hysterectomy In The Management Of Menorrhorhagia:  400 Consecutive Cases.  Obstetrics & Gynecology.  2008; 115 (6); p. 742-8.</li>
+          </ul>                      
+        </div>
+        
+        <div id="fanning">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Fanning</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>This study can be used with surgeons who may use the robot or be considering the robot for cytoreduction by showing that laparoscopic cytoreduction utilizing the PKS Cutting Forceps is an effective approach for ovarian cancer.</li>
+                <li>11 patients underwent laparoscopic cytoreduction.</li>
+                <li>Median OR time:  2.5 hr.</li>
+                <li>Median blood loss:  275 mL.</li> 
+                <li>Median length of stay:  1 day.</li>
+                <li>Median ovarian size was 5 cm and median omental metastasis was 14 cm.</li>  
+                <li>Laparoscopic cytoreduction for the treatment of primary advanced ovarian cancer with 82% of cases successfully debulked laparoscopically without conversion to laparotomy.</li>  
+                <li>When compared to cytoreduction via laparotomy, laparoscopic cytoreduction reported as 28% shorter OR time, four (4) times shorter average length of stay, and 61% reduction in postoperative complications.</li>  
+                <li>Secondary cytoreductions are frequently performed at the time of tumor recurrence.  Laparoscopic cytoreduction may allow for secondary cytoreductions to be performed more safely and successfully due to the reduced postoperative adhesions.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+               <li>Fanning J.,Hojat R., Johnson J., Fenton B.  Laparoscopic Cytoreduction for Primary Advanced Ovarian Cancer.  J. Society of Laparoendoscopic Surgeons.  2010; 14 (35); p.  80-82</li>
+          </ul>                      
+        </div>
+  
+		<div id="hoffman">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Hoffman</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Retrospective study, examined the clinical outcomes of abdominal hysterectomy (TAH), laparoscopic supracervical hysterectomy (LSH) and total laparoscopic hysterectomy (TLH).</li>  
+                <li>TAH-255; LSH-251; TLH-108 patients.
+                <li>Median OR time, statistically significant:  TAH-88 min.; TLH-131 min.; LSH-123 min.</li>
+                <li>Median estimated blood loss, statistically significant:  TAH-150 mL; TLH-50 mL; LSH-50 mL.</li>
+                <li>Length of hospital stay, statistically significant:  TAH-75 hrs.; TLH-30 hrs.; LSH-28 hrs.</li>
+                <li>Significantly less estimated blood loss and a significantly shorter length of stay were observed with minimally invasive procedures when compared to total abdominal hysterectomy.</li>  
+                <li>After previous use of the Harmonic Scalpel, the authors found this tool to be "unsatisfactory... because of excessive bleeding."</li>  
+                <li>The authors report success with the PK Cutting Forceps, finding the PK system to be, "effective for hemostasis, even on large vessels..."</li>
+                <li>The authors prefer advanced bipolar over monopolar energy in proximity to the bowel and bladder because the PK instrumentation appears to cause less thermal injury.</li>
+                <li>For more information regarding LSH, please reference:  Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Erian et al. (2008); Ghomi et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+				<li>Hoffman C., Kennedy J., Borschel L., Burchette R., Kidd A.  Laparoscopic Hysterectomy:  The Kaiser Permanente San Diego Experience.  J. Minimally Invasive Gynecology.  2005; 1 ; p. 16-24.  </li>          
+          	</ul>                      
+        </div>
+                 
+		<div id="lee">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lee</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>When comparing the metrics of blood loss, OR time, and postoperative complications in laparoscopic radical hysterectomy, pulsed bipolar energy (PKS)is more effective than conventional bipolar electrosurgery (Kleppinger).</li>
+                <li>Significantly less blood loss in the pulsed bipolar group (PKS Cutting Forceps):<br />
+                    - Blood loss:  PKS-397 mL.; Kleppinger-565 mL.</li>
+                <li>Significantly less OR time in the pulsed bipolar group (PKS Cutting Forceps):<br />
+                    - OR time:  PKS-172 min.; Kleppinger-229 min.</li>
+                <li>PKS system, "eliminates the risk of electrical injury", allows for "fewer instrument changes", and "does not stick to coagulated tissue and relatively less extensive thermal damage makes meticulous hemostasis possible."</li>
+                <li>"PlasmaKinetic cutting forceps showed a cutting ability equal to that of [conventional bipolar] electrosurgery, less plume generation, and less thermal tissue damage."</li>
+                <li>The PKS Cutting Forceps reduce the workload for the surgeon by allowing "simultaneous performance of hemostasis and division" in one instrument.</li> 
+                <li>Paper does not state thermal margin figures.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Lee C.L., Huang K.G., Wang C. J., Lee P.S., Hwang L.L.  Laparoscopic Radical Hysterectomy Using Bipolar System:  Comparison with Conventional Bipolar Electrosurgery.  Gynecologic Oncology.  2007; 105; p. 620-624.  </li>
+          </ul>                   
+        </div> 
+    
+		<div id="ouc">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Ou</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                
+            <ul class="keypoint">
+                <li>When compared to the use of the Kleppinger forceps, the PKS Cutting Forceps delivered improved performance, reduced blood loss and allowed for simplified logistics of the TLH procedure.</li>
+                <li>Significantly lower blood loss (average) with the PK group compared to Kleppinger:  PKS Cutting Forceps-112 mL; Kleppinger-172 mL.</li>
+                <li>PKS Cutting Forceps delivered, "significantly less plume, quicker coagulation, and less tissue char when coagulating" when compared to the Kleppinger forceps.</li>  
+                <li>Using the PKS Cutting Forceps eliminated some instrument exchanges and the requirement for a third instrument cannula and an additional abdominal puncture, when compared to the same procedure using the Kleppinger forceps.</li>
+  			</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Ou C., Joki J., Wells K., Zabriske V., Hamilton K., Tsuang M., Rowbotham R.  Total Laparoscopic Hysterectomy Using Multifunction Grasping, Coagulating and Cutting Forceps.  J. Laparoendoscopic & Advanced Surgical Techniques.  2004; 14 (2); p. 67-71.  </li>
+          </ul>                      
+        </div>
+
+        <div id="sarmini">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Sarmini</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                 
+            <ul class="keypoint">
+                <li>220 patients underwent laparoscopic supracervical hysterectomy (LSH); 220 patients underwent total abdominal hysterectomy (TAH).</li>
+                <li>LSH resulted in less blood loss, quicker OR time, quicker recovery and return to daily activities, and a lower complication rate when compared to TAH.</li>
+                <li>Statistically significant difference for LSH compared to TAH in:<br />
+                      - Blood loss:  LSH-59 mL; TAH-275 mL<br />
+                      - OR time:  LSH-48 min.; TAH-75 min.<br />
+                      - Length of hospital stay:  LSH-4 hrs.; TAH 80 hrs.<br />
+                      - Postoperative complication rate:  LSH-0%; TAH-25%.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Sarmini R., Lefholz K., Froeschke H.   Comparison of Laparoscopic Supracervical Hysterectomy and Total Abdominal Hysterectomy Outcomes.  J. Minimally Invasive Gynecology.  2005; 12 (2) p. 121-124.  </li>
+          </ul>                      
+        </div>
+        
+        <div id="shashoua">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Shashoua</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the perioperative results on 24 patients that underwent robotic assisted total laparoscopic hysterectomy and 44 patients that underwent total laparoscopic hysterectomy (TLH).</li> 
+                <li>Statistically significant difference in OR time:  Robot TLH-142.2 min.; TLH-122.1 min.<br />
+                      - Even with 84.1% of TLH patients having had prior surgeries, TLH resulted in significantly lower OR time.</li>
+                <li>Estimated blood loss:  Robot TLH-113.5 mL; TLH-98.8 mL.</li>
+                <li>"In patients with larger uteri that may require morcellation, we prefer traditional total laparoscopic hysterectomy over robotic hysterectomy."</li> 
+                <li>For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2010), and Payne (2008).</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Shashoua A., Gill D., Locher S.  Robotic-Assisted Total Laparoscopic Hysterectomy Versus Conventional Total Laparoscopic Hysterectomy.  J. of the Society of Laparoendoscopic Surgeons.  2009; 13; p.  364-369.  </li>
+          </ul>                   
+        </div>  
+
+  
+        <div id="surico">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Surico</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Case study of one patient; examined the feasibility of laparoendoscopic single-site surgery (LESS) for the treatment of concomitant ovarian cystectomy and cholecystectomy.</li>
+                <li>LESS is feasible while also being highly cosmetic for the treatment of concomitant cystectomy and cholecystectomy.</li> 
+                <li>OR time for case study:  132 min.</li>
+                <li>TriPort used for access, internal crowding of the instruments can be minimized by using the Olympus EndoEye (0-degree, 10 mm) and pre-bent curved hand instruments.</li>
+                <li>Paper explains the design of the TriPort device.</li>
+                <li>Estimated blood loss:  35 mL.</li>
+                <li>Surgeons suggest the 1 curved and 1 straight instrument which enables triangulation at the surgical site and helps to optimize the operative space.</li>  
+                <li>"Use of a single-port device when performing simultaneous cholecystectomy and gynecologic interventions may have important advantages in terms of risk of complications, postoperative pain, and cosmetic appearance."</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Surico D., Gentilli S., Vigone A., Paulli E., Leo L., Surico N.  Laparoendoscopic Single-Site Surgery for Treatment of ConcomitantOvarian Cystectomy and Cholecystectomy.  J. Minimally Invasive Gynecology.  2010; 17 (5); p.  656-658</li>
+          </ul>                      
+        </div>
+                         
+        <div id="wang">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Wang</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Compared the effectiveness of the PKS Cutting Forceps with the Kleppinger bipolar forceps in laparoscopically assisted vaginal hysterectomy (LAVH).</li>
+				<li>Average blood loss: PKS Cutting Forceps-197 mL; Kleppinger-253 mL (not statistically significant).</li>
+				<li>Average OR time: PKS-87.6 minutes; Kleppinger-93.4 minutes (not statistically significant).</li>
+				<li>PKS Cutting Forceps generated less plume and thermal tissue damage compared to the Kleppinger forceps.</li>  
+				<li>PKS Cutting Forceps demonstrated less sticking and required fewer instrument changes than the Kleppinger forceps.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Wang C., Yuen L., Yen C., Lee C., Soong Y.  Comparison of Efficacy of Pulsed Bipolar System and Conventional Electrosurgery in Laparoscopically Assisted Vaginal Hysterectomy. Laparoendoscopic & Advanced Surgical Techniques.  2005; 15 (4) p. 361-364. </li>
+          </ul>                      
+        </div>
+
+		<div id="zupi">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Zupi</h1>
+              </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>              
+            <ul class="keypoint">
+                <li>181 patients randomized to (LSH) laparoscopic supracervical hysterectomy (92 patients) or endometrial ablation (89 patients) for the treatment of menorrhagia and followed for two (2) years.</li>
+                <li>LSH is more desirable when compared to hysteroscopic endometrial resection for the treatment of menorrhagia in patients that are unresponsive to medical therapy, although it is more invasive than the hysteroscopic approach.</li>  
+                <li>When compared to the open (TAH) and laparoscopic vaginally assisted hysterectomy (LAVH) procedures, the LSH procedure is less invasive with shorter duration of stay, less blood loss and fewer complications.</li>  
+                <li>OR time, statistically significant:  LSH-71.5 min.<br />
+                      - Hoffman et al. 2005, reported an LSH OR time of 123 minutes.<br />
+                      - Cipullo et al. 2009, reported an LSH OR time of 111.36 minutes.<br />
+                      - Erian et al. 2008, reported an LSH OR time of 46.4 minutes.<br />
+                      - Sarmini et al. 2005, reported an LSH OR time of 48 minutes.</li>
+                <li>Estimated blood loss:  LSH-97 mL.<br />
+                      - Hoffman et al. 2005, reported an estimated blood loss of 50 mL.<br />
+                      - Sarmini et al. 2005, reported an estimated blood loss of 59 mL.</li>
+                <li>Length of hospital stay:  LSH-1.6 days (~38 hours).<br />
+                      - Hoffman et al. 2005, reported a mean length of hospital stay of 28 hours.<br />
+                      - Sarmini et al. 2005, reported a mean length of hospital stay of 4 hours.</li>
+                <li>The authors reported no significant difference in cost between hysteroscopic endometrial resection and LSH within a 2-year follow-up period.</li>  
+                <li>Overall patient satisfaction was significantly higher with LSH.</li>
+  			</ul>
+          	<div class="graytitle">Reference</div>
+         	 <ul class="keypoint">
+                <li>Zupi E., Zullo F., Marconi D., Sbracia M., Pellicano M., Solima E., Sorrenti G.  Hysteroscopic Endometrial Resection vs. Laparoscopic Supracervical Hysterectomy for Menorrhagia.  American J. Obstet. Gynecol. 2003; 188 (1) p. 7-12.</li>
+          	</ul>                      
+        </div>
+</body>
+</html>

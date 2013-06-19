@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+
+        <div id="comprate">
+        		<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		        <div class="toolbar">
+                <h1>Complication Rates</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                     
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#cr-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="cr-na">
+        		<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		        <div class="toolbar">
+                <h1>N/A</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Procedures</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div> 
+             <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#cr-na-lshtlh">LSH/TLH</a></li>
+                <li class="arrow"><a id="0" href="#cr-na-vag_lap_hyst">Vag. Hysterectomy/Lap. Hysterectomy</a></li>
+            </ul>
+        </div>
+              <div id="cr-na-lshtlh">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>LSH/TLH</h1>
+                    </div>
+                         <div class="reference">
+                            <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                            <span class="ref-text">Competition</span>
+                            <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                        </div> 
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#cr-lshtlh-na">N/A</a></li>
+                    </ul>
+                </div>
+				<div id="cr-na-vag_lap_hyst">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>Vag. Hysterectomy/Lap. Hysterectomy</h1>
+                    </div>
+                        <div class="reference">
+                            <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                            <span class="ref-text">Competition</span>
+                            <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                        </div> 
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#cr-vag_lap_hyst-na">N/A</a></li>
+                    </ul>
+                </div>
+                <div id="cr-lshtlh-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                     </div>
+                    <div class="reference">
+                        <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#cipullo">Cipullo</a></li>
+                    </ul>
+                </div> 
+				<div id="cr-vag_lap_hyst-na">
+                	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+                    <div class="toolbar">
+                        <h1>N/A</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+                    <ul class="edgetoedge">
+                        <li class="arrow"><a id="0" href="#warren">Warren</a></li>
+                    </ul>
+                </div>    
+        <div id="cipullo">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Cipullo</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Retrospective analysis.
+                <li>Examined the perioperative results of patients undergoing laparoscopic surpracervical hysterectomy (LSH) with those of patients undergoing total laparoscopic hysterectomy (TLH).</li>
+                <li>157 patients LSH and 157 patients TLH.</li>
+                <li>LSH resulted in shorter operation times and lower major complication rates than TLH.</li>  
+                <li>OR time, statistically significant:  LSH-111.36 min.; TLH-121.71 min.<br />
+                      - Hoffman et al. 2005 reported similar OR times, LSH-123 min.; TLH-131 min.</li>
+                <li>Uses monopolar for hemostasis.  No mention of other devices used.</li>
+                <li>Laparoscopic approach "ensures a shorter postoperative recovery and quick return to work". </li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+				<li>Cipullo L., De Paoli S., Fasolino L., Fasolino A.  Laparoscopic Supracervical Hysterectomy Compared to Total Hysterectomy.  . of the Society of Laparoendoscopic Surgeons.  2009; 13; p.  370-375.  </li>          
+			</ul>                      
+        </div>
+
+		<div id="warren">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Warren</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                
+            <ul class="keypoint">
+                <li>Examined the clinical and economic outcomes of minimally invasive procedures - laparoscopic (LH) and vaginal hysterectomy (VH) with the traditional open abdominal hysterectomy (AH).</li> 
+                <li>Outcomes:<br />
+                      - Complication rate, statistically significant:  AH-18%; LH-15%; VH-14%.<br />
+                      - Length of stay, statistically significant:  AH-3.66 days; LH-1.56 days; VH-2.21.</li>
+                <li>Expenditures:<br /> 
+                      - Average expenditures per procedure and follow up care, statistically significant:  AH-$11,390; LH-$11,508; VH-$10,177.<br /> 
+                      - Total expenditures for healthcare associated with a patient's hysterectomy.  Included all insurer and patient payments and included the cost of the surgical procedure, e.g.-follow-up office visits, emergency department visits, and hospitalizations.<br /> 
+                      - If just 20% of open abdominal hysterectomies are converted to minimally invasive laparoscopic outpatient procedures, this would reduce total spending by $2,313 per procedure, which would translate to a total reduction of 3.7 billion on the healthcare system.</li>  
+                <li>Patients are more likely to experience bleeding episodes and other complications after AH; infections are more frequent, as well as longer hospital stays.</li>  
+                <li>LH and VH are associated with shorter hospitalizations and lower infection rates, and reduced procedure-specific complication rates. </li> 
+                <li>Outpatient LH and VH require significantly less expenditures than inpatient AH, suggesting large savings could be realized by shifting appropriate candidates towards minimally invasive hysterectomy. </li>
+  			</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Warren L., Ladapo J.,Borah B.,Gunnarsson C.  Open Abdominal versus Laparoscopic and Vaginal Hysterectomy:  Analysis of a Large United States Payer Measuring Quality and Cost of Care.  J. Minimally Invasive Gynecology.  2009; 16 (5); p.  581-588.</li>
+          </ul>                      
+        </div>
+
+</body>
+</html>

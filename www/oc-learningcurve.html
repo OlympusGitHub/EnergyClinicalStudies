@@ -1,0 +1,445 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+        <link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+
+        <div id="learncurv">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Learning Curve</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-cutfor">Cutting Forceps</a></li>
+                <li class="arrow"><a id="0" href="#lc-endwri">EndoWrist Dissector</a></li>
+                <li class="arrow"><a id="0" href="#lc-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="lc-cutfor">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps</h1>
+               </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-cutfor-lsh">LSH</a></li>
+            </ul>
+        </div>
+   		<div id="lc-endwri">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>EndoWrist Dissector</h1>
+                </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-endwri-tlh">TLH</a></li>
+            </ul>
+        </div>
+   		<div id="lc-na">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+                </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-na-lsh">LSH</a></li>
+                <li class="arrow"><a id="0" href="#lc-na-na">N/A</a></li>
+                <li class="arrow"><a id="0" href="#lc-na-pro">Prostatectomy</a></li>
+                <li class="arrow"><a id="0" href="#lc-na-var">Various forms of hysterectomy</a></li>
+            </ul>
+        </div>
+        <div id="lc-cutfor-lsh">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LSH</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-cutfor-lsh-na">N/A</a></li>
+            </ul>
+        </div>
+   		<div id="lc-endwri-tlh">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>TLH</h1>
+                  </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-endwri-tlh-davin">da Vinci</a></li>
+            </ul>
+        </div> 
+        <div id="lc-na-lsh">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LSH</h1>
+                   </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-na-lsh-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="lc-na-na">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-na-na-davin">da Vinci</a></li>
+            </ul>
+        </div>
+        <div id="lc-na-pro">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Prostatectomy</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-na-pro-davin">da Vinci</a></li>
+            </ul>
+        </div>
+        <div id="lc-na-var">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Various forms of hysterectomy</h1>
+                  </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lc-na-var-davin">daVinci</a></li>
+            </ul>
+        </div> 
+         <div id="lc-cutfor-lsh-na">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#ghomi">Ghomi</a></li>
+            </ul>
+        </div>
+   		<div id="lc-endwri-tlh-davin">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>da Vinci</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#payne">Payne</a></li>
+            </ul>
+        </div> 
+        <div id="lc-na-lsh-na">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#bojahr">Bojahr</a></li>
+            </ul>
+        </div>
+        <div id="lc-na-na-davin">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>da Vinci</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#barbash">Barbash</a></li>
+                <li class="arrow"><a id="0" href="#carreyrou">Carreyrou</a></li>                
+            </ul>
+        </div>
+        
+        <div id="lc-na-pro-davin">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>da Vinci</h1>
+           </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#steinberg">Steinberg</a></li>
+            </ul>
+        </div>
+        <div id="lc-na-var-davin">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>da Vinci</h1>
+           </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lenihan">Lenihan</a></li>
+            </ul>
+        </div> 
+        <div id="barbash">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Barbash</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>
+            <ul class="keypoint">
+                <li>Examined the variable cost of conducting a robot assisted procedure across 20 types of surgery, including gynecology.<br />   
+                      - Mean cost per procedure for robotic laparoscopic hysterectomy:  $8,951.<br />  
+                      - No data on what these costs include.<br />
+                      - For more details on cost of the robot for gynecological procedures, please reference the following authors:  Advincula et al. (2007) and Pasic et al. (2010).</li>
+                <li>Learning curve of 150-250 procedures depending on procedure and surgeon skill level.<br />
+                      - For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2008), Payne et al. (2008), and Steinberg et al. (2008).</li>
+                <li>The additional cost for the robot assisted procedure is 6% (13% when including the amortized cost of the robot itself) of the cost of the procedure in 2007.</li>  
+                <li>Relating to prostatectomy procedure:  "...evidence suggests that despite the short-term benefits, robotic technology may not have improved patient outcomes or quality of life in the long run".</li>  
+                <li>"Number of robot assisted procedures that are performed worldwide has nearly tripled since 2007, from 80,000 to 205,000."</li> 
+                <li>Between 2007 and 2009, the number of da Vinci systems that were installed in U.S. hospitals grew by approximately 75%, from almost 800 to around 1400, while the number abroad doubled from 200 to nearly 400.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Barbash G., Glied S.  New Technology and Health Care Costs - The Case of Robot-Assisted Surgery.  The New England Journal of Medicine.  2010; 363 (8); p.  701-704.</li>
+          </ul>                      
+        </div> 
+
+        <div id="bojahr">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Bojahr</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>Retrospective analysis of the first 1,000 consecutive laparoscopic supracervical hysterectomy (LSH) cases for one gynecologist with the purpose of analyzing the surgeon's learning curve.</li> 
+                <li>Cases broken out into 4 groups by uterine weight during years 2002-2006.</li>  
+                <li>Mean extirpated uterine weight:  212.5 grams.</li>
+                <li>Median OR time for 1,000 cases:  70.9 min.</li>
+                <li>Duration of surgery depending on extirpated uterine weight:</li>
+                <li>Median OR time was reduced from 85.4 minutes in year one (1) to 72.4 minutes in year four (4), while average uterus weight rose from 192.3 grams to 228.7 grams over the same timeframe.</li>  
+                <li>An experienced surgeon can rapidly learn the laparoscopic techniques necessary for LSH with an expected learning curve of about 30 cases before the surgeon gains proficiency of technique.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Bojahr B., Tchartchian G.,Ohlinger R.  Laparoscopic Supracervical Hysterectomy:  A Retrospective Analysis of 1000 Cases.  J. of the Society of Laparoendoscopic Surgeons.  2009; 13; p.  129-134.</li>
+          </ul>                  
+        </div>       
+        
+        <div id="carreyrou">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Carreyrou</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>This interesting article explores the success of Intuitive Surgical and the risks involved with the learning curve of the robot at one small hospital in New Hampshire, Wentworth-Douglass.</li>  
+				<li>The article discusses the challenges and complication rates for a hospital that has a low number of cases per year. </li> 
+				<li>When a new hospital purchases a robot, Intuitive Surgical provides a paid two-day course for two surgeons at a training center.</li>  
+				<li>The article reports that Jim Hu, a surgeon at Brigham and Women's Hospital in Boston, who has done more than 1,000 surgeries with the robot, says it takes a urologist anywhere from 250 to 700 cases to master it.  </li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+				<li>Carreyrou, J.  Surgical Robot Examined in Injuries.  Wall Street Journal Online.  5/4/2010.</li>
+          </ul>                      
+        </div>
+     
+        <div id="ghomi">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Ghomi</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Prospective study that examined the learning curve for laparoscopic supracervical hysterectomy (LSH).</li>
+                <li>60 patients underwent LSH procedure.</li>
+                <li>The OR time was significantly reduced from 166 min. to 142.3 min. between the first 30 and last 30 cases.</li>
+                <li>Average uterine weight:  First 30 cases-132.8 grams; last 30 cases-154.6 grams.</li>
+                <li>Average length of hospital stay:  First 30 cases-23.6 hours; last 30 cases-23.3 hours.</li>
+                <li>Upper uterine pedicles are coagulated and transected by using a 5 mm PKS device (device not specified).</li>
+                <li>Harmonic Scalpel (Ethicon) used for amputation and Gynecare morcellator used for specimen removal (device not specified).</li>
+                <li>The authors concluded that 30 cases are needed for proficiency in laparoscopic supracervical hysterectomy and that OR time is reduced with experience.</li>  
+                <li>For more information regarding LSH, please reference:  Erian et al. (2008); Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Hoffman et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+				<li>Ghomi A., Littman P., Prasad A., Einarsson J.  Assessing The Learning Curve for Laparoscopic Supracervical Hysterectomy.  J. of the Society of Laparoendoscopic Surgeons.  2007; 11; p.  190-194. </li>          
+          </ul>                      
+        </div>
+  
+		<div id="lenihan">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+          <div class="toolbar">
+            <h1>Lenihan</h1>
+          </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+              <li>113 patients, examined the learning curve when using the robot for LSH and TLH procedures.</li> 
+              <li>20 cases to set up robot in 45 min. or less with a dedicated robot team and 50 cases to improve to 35 min.</li>
+              <li>Mix of lap. procedures but a majority were LSH (31) and TLH (67). </li> 
+              <li>Average Uterine Weight:  184 grams.</li> 
+              <li>Conclusion states, "In the hands of surgeons with advanced laparoscopic skills, learning curve to stabilize operative times......is 50 cases."</li>  
+              <li>For more information regarding robot learning curves please reference:  Carreyrou (2010), Payne et al. (2008), and Steinberg et al. (2008).</li>
+          </ul>
+          <div class="graytitle">Reference</div>
+                    <ul class="keypoint">
+                <li>Lenihan, J., Kovanda C., Seshadri-Kreaden, U.  What is the Learning Curve for Robotic Assisted Gynecologic Surgery?  J. Minimally Invasive Gynecology.  2008; 15 (5); p.  589-594.</li>
+          </ul>
+        </div> 
+  
+		<div id="payne">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+            	<h1>Payne</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>The purpose of this study is to provide you with additional data that your competitors may be using regarding the robot.
+              <li>Examined the postoperative outcomes of the total laparoscopic hysterectomy (TLH) and robot assisted TLH procedures.</li>
+                <li>100 patients - TLH; 100 patients - Robotic hysterectomy.</li>
+                <li>Average OR time - measured as skin-to-skin time:  TLH-92.4 min.; Robotic hysterectomy-119.4 min.</li>
+                <li>Average OR time - measured as skin-to-skin time:  First 75 robot cases-133.5 min; last 25 robot cases-78.7 min.<br />
+                      - The authors reported a drastic decrease in OR time from 133.5 minutes in the first 25 robot cases to an OR time of 78.7 minutes for the last 25 cases.  "This trend revealed a significant learning curve."<br />
+                      - The authors reported a 13.7 minute faster average OR time in the last 25 robotic cases when compared to the OR time of the 100 TLH cases.</li> 
+                <li>No reported docking/undocking time of the robot or any details of the robot set-up team in the OR.</li>
+                <li>The Gyrus PKS Endowrist Dissector was used in this study.</li> 
+                <li>Other surgeons have reported a learning curve of anywhere from 50-200 cases with the robot for experienced laparoscopic surgeons.</li>
+                <li>For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2008), and Steinberg et al. (2008) and the "da Vinci" tab.</li>
+  		</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Payne T. & Dauterive F.  A Comparison of Total Laparoscopic Hysterectomy:  Surgical Outcomes in a Community Practice.  J. Minimally Invasive Gynecology.  2008; 15 (6); p. 286-291.</li>
+          </ul>                      
+        </div>
+  
+        <div id="steinberg">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Steinberg</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>Based on a theoretical model and literature review of 8 robotic-assisted prostatectomy studies.</li> 
+                <li>Examined the costs associated with the learning curve of the robotic prostatectomy.</li>  
+                <li>Based on the literature review, the learning curve for robotic prostatectomy ranged from 20 to more than 250 cases.</li>  
+                <li>In this study, the learning curve was considered the time from adoption of robotic prostatectomy until a statistically significant lowest operative time was reached.</li>  
+                <li>Costs were calculated by adding the cost of the operating room time and anesthesia services over the duration of the learning curve.  Costs associated with the acquisition of the robot, instrumentation, service agreement, and drapes were not included in this cost calculation.</li>  
+                <li>Over an average learning curve of 77 cases for robotic prostatectomy the total learning curve costs:  $217,034. </li>
+                <li>Considering the procedure volume for the majority of urologists, it would take approximately 2 years to reach 77 cases.</li>    
+                <li>This literature review did not quote reimbursement rates or instrumentation utilized in the various studies.</li>
+                <li>For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2010), and Payne (2008).</li>
+                <li>For more details on cost of the robot for gynecological procedures, please reference the following authors:  Advincula et al. (2007), Barbash et al. (2010), and Pasic et al. (2010).</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Steinberg P., Merguerian P., Bihrle W., Seigne J.  The Cost of Learning Robotic-Assisted Prostatectomy.  Urology.  2007; 72; p.  1068-1072.</li>
+          </ul>                   
+        </div>          
+  
+</body>
+</html>

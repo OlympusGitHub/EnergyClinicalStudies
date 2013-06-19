@@ -1,0 +1,311 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>                
+        <div id="thermal">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Thermal Spread</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cf">Cutting Forceps</a></li>
+                <li class="arrow"><a id="0" href="#therm-cfsns">Cutting Forceps(Size Not Specified)</a></li>
+                <li class="arrow"><a id="0" href="#therm-sof">SEAL Open Forceps</a></li>                
+            </ul>
+        </div>
+         <div id="therm-cf">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps</h1>
+            </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cf-bt">Bench Testing</a></li>
+                <li class="arrow"><a id="0" href="#therm-cf-at">Animal Study</a></li>                
+            </ul>
+        </div>
+         <div id="therm-cfsns">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps(Size Not Specified)</h1>
+             </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cfsns-bt">Bench Testing</a></li>
+           </ul>
+        </div>
+         <div id="therm-sof">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>SEAL Open Forceps</h1>
+            </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-sof-abt">Animal and Bench Testing</a></li>                
+            </ul>
+        </div>
+         <div id="therm-cf-bt">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Bench Testing</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cf-bt-har">Harmonic</a></li>
+            </ul>
+        </div>
+        <div id="therm-cf-at">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal Study</h1>
+             </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cf-at-har">Harmonic</a></li>   
+            </ul>
+        </div>
+         <div id="therm-cfsns-bt">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Bench Testing</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-cfsns-bt-hel">Harmonic/EnSeal/ LigaSure</a></li>
+           </ul>
+        </div>
+         <div id="therm-sof-abt">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal and Bench Testing</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#therm-sof-abt-na">N/A</a></li>                
+            </ul>
+        </div>
+         <div id="therm-cf-bt-har">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#dodde">Dodde</a></li>
+            </ul>
+        </div>
+        <div id="therm-cf-at-har">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sibbons">Sibbons</a></li>   
+            </ul>
+        </div>
+         <div id="therm-cfsns-bt-hel">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic/EnSeal/ LigaSure</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lamberton">Lamberton</a></li>
+           </ul>
+        </div>
+         <div id="therm-sof-abt-na">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+             </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#presthus">Presthus</a></li>                
+            </ul>
+        </div>
+        <div id="dodde">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Dodde</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the tissue temperature at 1 mm from the edge of the Gyrus PKS Cutting Forceps and Ethicon Harmonic ACE (measured in temperature using a thermistor 1 mm from the edge of the device).</li>
+                <li>PKS Cutting Forceps:<br />
+                      - Average maximum temperature at 1 mm from device edge:  56.8&ordm;C<br />
+                      - Average time to achieve hemostasis:  5.7 sec.</li>
+                <li>Harmonic Scalpel:<br />
+                      - Average maximum temperature at 1 mm from device edge:<br />
+                            &nbsp;&nbsp;- Coagulation setting:  57.5&ordm;C<br />
+                            &nbsp;&nbsp;- Coagulation until cut setting:  61.9&ordm;C<br />
+                            &nbsp;&nbsp;- Coagulation and cut setting:  56.4&ordm;C<br />
+                      - Average time to achieve hemostasis:<br />
+                            &nbsp;&nbsp;- Coagulation setting:  5.2 sec.<br />
+                            &nbsp;&nbsp;- Coagulation until cut setting:  10.3 sec.<br />
+                            &nbsp;&nbsp;- Coagulation and cut setting:  6.0 sec.</li>
+                <li>No statistically significant difference between the PKS Cutting Forceps or Ethicon Harmonic ACE in thermal temperatures at 1 mm from device edge.</li>
+                <li>The PKS Cutting Forceps and the Ethicon Harmonic ACE demonstrate "comparable thermal profiles during energized dissection and hemostasis."</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Dodde R., Shih A., Advincula A.  A Novel Technique for Demonstrating the Real-Time Subsurface Tissue Thermal Profile of Two Energized Surgical Instruments.  J. Minimally Invasive Gynecology.  2009; 16 (5); p. 599-603.</li>
+          </ul>                      
+        </div>
+     
+        <div id="lamberton">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lamberton</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>This paper has been handed out by your competitors.  The purpose of this summary is to give you data to counter the argument that your competitors are making.</li>
+                <li>Examined the thermal spread and burst pressures of PK (device not specified, likely the Cutting Forceps), Harmonic ACE, EnSeal PTC, and LigaSure V devices, using 5 mm bovine arteries for testing.</li>
+                <li>PK had the second highest mean burst pressure-290 mmHg, behind LigaSure with 385 mmHg.</li>  
+                <li>"All devices tested resulted in temperatures 2 mm away from tissue that were greater than 40&ordm;C and hence should be used with caution next to vital structures...."</li>  
+                <li>"Sealing times for the LigaSure (10.0 sec) and Gyrus PK (11.1 sec) were statistically faster when compared to EnSeal (19.2 sec) or Harmonic Scalpel (14.3 sec), p for both &lt; 0.001."</li>  
+                <li>Potential limitations with this model include vessels without blood and an ex-vivo experimental model.</li>
+                <li>Thermal spread (measured in temperature using a thermistor 2 mm from the edge of the device).  Gyrus reported at (64.5&ordm;C), LigaSure (55.5&ordm;C), EnSeal (58.9&ordm;C), and Harmonic (49.9&ordm;C).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+            <ul class="keypoint">
+                <li>Lamberton G.R., His R.S., Jin D.H., Lindler T.U., Jellison F.C., Baldwin D.D.  Prospective Comparison of Four Laparoscopic Vessel Ligation Devices.  J. of Endourology.  2008; 22 (10);  p.  2307-12.</li>
+         	</ul>                      
+        </div>      
+   
+        <div id="presthus">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Presthus</h1>
+         </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Examined the vessel securing ability of the PKS SEAL Open Forceps on skelotonized vessels up to 7 mm in diameter to withstand sustained pressure of 300 mmHg using bench and animal models.</li>  
+                <li>Mean burst pressure, among all vessel diameters:  1052 mmHg.</li>  
+                <li>Thermal spread range, among all vessel diameters:  0.4-2.3 mm from closure site edge.</li>  
+                <li>The PKS SEAL Open Forceps provides efficient vessel securing with the ability to withstand high intraluminal pressure.</li>
+                <li>Bench model test:  Success rate of 95.5% or 64/67 vessels were secured.  Diameters of 4,5,6,7,8, and 10 mm.</li>
+                <li>Animal model test:  Success rate of 95.7% or 44/46 vessels were secured.  Diameters of 2.5, 3, 3.5, 4,5,6, and 7 mm.</li>
+                <li>End point burst pressures were tested in the animal model and ranged from 565 to 1934 mmHg, with a mean of 1052 mmHg.</li>  
+                <li>"Using the open forceps to coagulate tissue rather than conventional clamps decreases the need for instrument exchanges and may ultimately decrease operating time with cost savings."</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Presthus JB, Brooks PG, Kirchhof N.  Vessel Sealing Using A Pulsed Bipolar System And Open Forceps.  J. Am Assoc Gynecol Laparosc. 2003 Nov;10(4):  528-33.</li>
+          </ul>                   
+        </div> 
+
+        <div id="sibbons">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Sibbons</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                 
+            <ul class="keypoint">
+                <li>Compares thermal margins between PKS Cutting Forceps, PKS Plasma Spatula and Harmonic ACE.</li>
+				<li>Thermal margins were comparable between all 3 devices.<br />
+     				 - PKS Cutting Forceps:  1.59 mm; PKS Plasma Spatula:  2.38 mm; Harmonic ACE 1.67 mm.</li>
+				<li>During coagulation and mechanical cutting, the PKS Cutting Forceps maximum device and tissue surface temperatures reached 75-83&ordm;C, compared to 52-68&ordm;C during cutting and 89-138&ordm;C during coagulation for the Harmonic ACE.</li>  
+				<li>"100&ordm;C, represents a risk of internal thermal injury in the abdomiopelvic cavity."</li>
+				<li>Harmonic produced unintentional cavitational lesions, described as "cutting ahead of itself", which may be challenging for the surgeon to visualize.</li>  
+				<li>Unintentional tissue cutting occurred with Harmonic when coagulation was applied, "...despite using the MIN setting".</li>
+				<li>Tissue may slip between the blades of the Harmonic ACE when cutting, leading to a decline in the precision of the instrument. </li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Sibbons P.   Comparison of Hemostatic Sealing and Cutting Characteristics of Gyrus PK Devices with Harmonic Technologies. White Paper. </li>
+          </ul>                      
+        </div>
+  
+</body>
+</html>

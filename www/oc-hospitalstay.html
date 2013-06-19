@@ -1,0 +1,417 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>     
+<div id="hospstay">
+		    <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Hospital Stay</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-cutfor">Cutting Forceps</a></li>
+                <li class="arrow"><a id="0" href="#hs-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="hs-cutfor">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps</h1>
+             </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>     
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-cutfor-gyn">GYN Oncology</a></li>
+                <li class="arrow"><a id="0" href="#hs-cutfor-lsh">LSH/TLH/TAH</a></li>
+            </ul>
+        </div>    
+<div id="hs-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+                </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>    
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-na-laphys">Lap. Hysterectomy</a></li>
+                <li class="arrow"><a id="0" href="#hs-na-lhstah">LSH/TAH</a></li>
+                <li class="arrow"><a id="0" href="#hs-na-lhs">LSH</a></li>
+                <li class="arrow"><a id="0" href="#hs-na-vaglap">Vag./Lap. Hysterectomy</a></li>
+            </ul>
+        </div>
+  <div id="hs-cutfor-gyn">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>GYN Oncology</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-cutfor-gyn-na">N/A</a></li>
+            </ul>
+        </div>  
+<div id="hs-cutfor-lsh">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LSH/TLH/TAH</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-cutfor-lsh-na">N/A</a></li>
+            </ul>
+        </div>
+<div id="hs-na-laphys">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Lap. Hysterectomy</h1>
+    			</div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-na-laphys-davin">da Vinci</a></li>
+            </ul>
+        </div>
+<div id="hs-na-lhstah">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LSH/TAH</h1>
+                   </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-na-lhstah-na">N/A</a></li>
+            </ul>
+        </div>
+<div id="hs-na-lhs">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LSH</h1>
+                    </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-na-lhs-na">N/A</a></li>
+            </ul>
+        </div>
+<div id="hs-na-vaglap">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Vag./Lap. Hysterectomy</h1>
+                     </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hs-na-vaglap-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="hs-cutfor-gyn-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#fanning">Fanning</a></li>
+            </ul>
+        </div>  
+<div id="hs-cutfor-lsh-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#hoffman">Hoffman</a></li>
+            </ul>
+        </div>
+<div id="hs-na-laphys-davin">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>da Vinci</h1>
+             </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#pasic">Pasic</a></li>
+            </ul>
+        </div>
+<div id="hs-na-lhstah-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sarmini">Sarmini</a></li>
+            </ul>
+        </div>
+<div id="hs-na-lhs-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#zupi">Zupi</a></li>
+            </ul>
+        </div>
+<div id="hs-na-vaglap-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#warren">Warren</a></li>
+            </ul>
+        </div>
+        <div id="fanning">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Fanning</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>This study can be used with surgeons who may use the robot or be considering the robot for cytoreduction by showing that laparoscopic cytoreduction utilizing the PKS Cutting Forceps is an effective approach for ovarian cancer.</li>
+                <li>11 patients underwent laparoscopic cytoreduction.</li>
+                <li>Median OR time:  2.5 hr.</li>
+                <li>Median blood loss:  275 mL.</li> 
+                <li>Median length of stay:  1 day.</li>
+                <li>Median ovarian size was 5 cm and median omental metastasis was 14 cm.</li>  
+                <li>Laparoscopic cytoreduction for the treatment of primary advanced ovarian cancer with 82% of cases successfully debulked laparoscopically without conversion to laparotomy.</li>  
+                <li>When compared to cytoreduction via laparotomy, laparoscopic cytoreduction reported as 28% shorter OR time, four (4) times shorter average length of stay, and 61% reduction in postoperative complications.</li>  
+                <li>Secondary cytoreductions are frequently performed at the time of tumor recurrence.  Laparoscopic cytoreduction may allow for secondary cytoreductions to be performed more safely and successfully due to the reduced postoperative adhesions.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+               <li>Fanning J.,Hojat R., Johnson J., Fenton B.  Laparoscopic Cytoreduction for Primary Advanced Ovarian Cancer.  J. Society of Laparoendoscopic Surgeons.  2010; 14 (35); p.  80-82</li>
+          </ul>                      
+        </div>
+        
+ 
+		<div id="hoffman">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Hoffman</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Retrospective study, examined the clinical outcomes of abdominal hysterectomy (TAH), laparoscopic supracervical hysterectomy (LSH) and total laparoscopic hysterectomy (TLH).</li>  
+                <li>TAH-255; LSH-251; TLH-108 patients.
+                <li>Median OR time, statistically significant:  TAH-88 min.; TLH-131 min.; LSH-123 min.</li>
+                <li>Median estimated blood loss, statistically significant:  TAH-150 mL; TLH-50 mL; LSH-50 mL.</li>
+                <li>Length of hospital stay, statistically significant:  TAH-75 hrs.; TLH-30 hrs.; LSH-28 hrs.</li>
+                <li>Significantly less estimated blood loss and a significantly shorter length of stay were observed with minimally invasive procedures when compared to total abdominal hysterectomy.</li>  
+                <li>After previous use of the Harmonic Scalpel, the authors found this tool to be "unsatisfactory...because of excessive bleeding."</li>  
+                <li>The authors report success with the PK Cutting Forceps, finding the PK system to be, "effective for hemostasis, even on large vessels..."</li>
+                <li>The authors prefer advanced bipolar over monopolar energy in proximity to the bowel and bladder because the PK instrumentation appears to cause less thermal injury.</li>
+                <li>For more information regarding LSH, please reference:  Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Erian et al. (2008); Ghomi et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+				<li>Hoffman C., Kennedy J., Borschel L., Burchette R., Kidd A.  Laparoscopic Hysterectomy:  The Kaiser Permanente San Diego Experience.  J. Minimally Invasive Gynecology.  2005; 1 ; p. 16-24.  </li>          
+          	</ul>                      
+        </div>
+    
+		<div id="pasic">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Pasic</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Analysis of 36,188 patients from 358 hospitals undergoing hysterectomy in both an inpatient and outpatient setting.</li>
+                <li>Examined the clinical and economic outcomes in women undergoing laparoscopic hysterectomy performed with and without robotic assistance in an inpatient or outpatient setting.</li>  
+                <li>"The study demonstrated that there is no major or even incremental clinical benefit associated with robot assistance when considering perioperative and postoperative complications.  Robot assisted procedures are, however, associated with higher hospital costs, with an average incremental per procedure cost in excess of $2,600.  Robot assisted procedures are also associated with longer surgery times..."</li>  
+                <li>Hysterectomy procedure mix:  95% laparoscopic approach; 5% robotic approach.  *Note:  A sensitivity analysis was completed to account for the difference in the numbers of non-robotic and robotic procedures, and all results were similar to those facilities that did not have a robot.</li>  
+                <li>Average Cost Difference, statistically significant:<br />
+                      - Inpatient cost:  Robot assisted-$9640; laparoscopic (without robot)-$6973.<br />
+                      - Outpatient cost:  Robot assisted-$7920; laparoscopic (without robot)-$5949.<br />
+                      - Note:  Cost measures did not include cost to acquire the robot unit ($1-2.3 million) or annual maintenance fees ($100,00-180,000 per year).  Costs reported in the paper are actual costs incurred by hospital for all treatments and services related to the hysterectomy.</li> 
+                <li>Average Surgery Time, statistically significant:<br />
+                      - Inpatient OR time:  Robot assisted-3.22 hours; laparoscopic (without robot)-2.82 hours.<br />
+                      - Outpatient OR time:  Robot assisted-2.99 hours; laparoscopic (without robot)-2.46 hours.<br />
+                      - Note:  No information provided on how OR time was measured.</li>
+                <li>Average length of stay, statistically significant:  Robot assisted-1.37 days; laparoscopic-1.49 days.<br />
+                      - Although the average length of stay was statistically significant, the authors reported that the difference did not represent clinical significance.  </li>
+  			</ul>
+        	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+                <li>Pasic R.P., Rizzo J.A., Fang H., Ross S.,  Moore M., Gunnarsson C.  Comparing Robot-Assisted with Conventional Laparoscopic Hysterectomy:  Impact On Cost And Clinical Outcomes.  J. Minimally Invasive Gynecology.  2010; 17 (6); p.  730-738.</li>
+          	</ul>
+        </div>  
+ 
+        <div id="sarmini">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Sarmini</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                 
+            <ul class="keypoint">
+                <li>220 patients underwent laparoscopic supracervical hysterectomy (LSH); 220 patients underwent total abdominal hysterectomy (TAH).</li>
+                <li>LSH resulted in less blood loss, quicker OR time, quicker recovery and return to daily activities, and a lower complication rate when compared to TAH.</li>
+                <li>Statistically significant difference for LSH compared to TAH in:<br />
+                      - Blood loss:  LSH-59 mL; TAH-275 mL<br />
+                      - OR time:  LSH-48 min.; TAH-75 min.<br />
+                      - Length of hospital stay:  LSH-4 hrs.; TAH 80 hrs.<br />
+                      - Postoperative complication rate:  LSH-0%; TAH-25%.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Sarmini R., Lefholz K., Froeschke H.   Comparison of Laparoscopic Supracervical Hysterectomy and Total Abdominal Hysterectomy Outcomes.  J. Minimally Invasive Gynecology.  2005; 12 (2) p. 121-124.  </li>
+          </ul>                      
+        </div>
+    
+
+		<div id="warren">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Warren</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                
+            <ul class="keypoint">
+                <li>Examined the clinical and economic outcomes of minimally invasive procedures - laparoscopic (LH) and vaginal hysterectomy (VH) with the traditional open abdominal hysterectomy (AH).</li> 
+                <li>Outcomes:<br />
+                      - Complication rate, statistically significant:  AH-18%; LH-15%; VH-14%.<br />
+                      - Length of stay, statistically significant:  AH-3.66 days; LH-1.56 days; VH-2.21.</li>
+                <li>Expenditures:<br /> 
+                      - Average expenditures per procedure and follow up care, statistically significant:  AH-$11,390; LH-$11,508; VH-$10,177.<br /> 
+                      - Total expenditures for healthcare associated with a patient's hysterectomy.  Included all insurer and patient payments and included the cost of the surgical procedure, e.g.-follow-up office visits, emergency department visits, and hospitalizations.<br /> 
+                      - If just 20% of open abdominal hysterectomies are converted to minimally invasive laparoscopic outpatient procedures, this would reduce total spending by $2,313 per procedure, which would translate to a total reduction of 3.7 billion on the healthcare system.</li>  
+                <li>Patients are more likely to experience bleeding episodes and other complications after AH; infections are more frequent, as well as longer hospital stays.</li>  
+                <li>LH and VH are associated with shorter hospitalizations and lower infection rates, and reduced procedure-specific complication rates. </li> 
+                <li>Outpatient LH and VH require significantly less expenditures than inpatient AH, suggesting large savings could be realized by shifting appropriate candidates towards minimally invasive hysterectomy. </li>
+  			</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Warren L., Ladapo J.,Borah B.,Gunnarsson C.  Open Abdominal versus Laparoscopic and Vaginal Hysterectomy:  Analysis of a Large United States Payer Measuring Quality and Cost of Care.  J. Minimally Invasive Gynecology.  2009; 16 (5); p.  581-588.</li>
+          </ul>                      
+        </div>
+
+		<div id="zupi">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Zupi</h1>
+              </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>              
+            <ul class="keypoint">
+                <li>181 patients randomized to (LSH) laparoscopic supracervical hysterectomy (92 patients) or endometrial ablation (89 patients) for the treatment of menorrhagia and followed for two (2) years.</li>
+                <li>LSH is more desirable when compared to hysteroscopic endometrial resection for the treatment of menorrhagia in patients that are unresponsive to medical therapy, although it is more invasive than the hysteroscopic approach.</li>  
+                <li>When compared to the open (TAH) and laparoscopic vaginally assisted hysterectomy (LAVH) procedures, the LSH procedure is less invasive with shorter duration of stay, less blood loss and fewer complications.</li>  
+                <li>OR time, statistically significant:  LSH-71.5 min.<br />
+                      - Hoffman et al. 2005, reported an LSH OR time of 123 minutes.<br />
+                      - Cipullo et al. 2009, reported an LSH OR time of 111.36 minutes.<br />
+                      - Erian et al. 2008, reported an LSH OR time of 46.4 minutes.<br />
+                      - Sarmini et al. 2005, reported an LSH OR time of 48 minutes.</li>
+                <li>Estimated blood loss:  LSH-97 mL.<br />
+                      - Hoffman et al. 2005, reported an estimated blood loss of 50 mL.<br />
+                      - Sarmini et al. 2005, reported an estimated blood loss of 59 mL.</li>
+                <li>Length of hospital stay:  LSH-1.6 days (~38 hours).<br />
+                      - Hoffman et al. 2005, reported a mean length of hospital stay of 28 hours.<br />
+                      - Sarmini et al. 2005, reported a mean length of hospital stay of 4 hours.</li>
+                <li>The authors reported no significant difference in cost between hysteroscopic endometrial resection and LSH within a 2-year follow-up period.</li>  
+                <li>Overall patient satisfaction was significantly higher with LSH.</li>
+  			</ul>
+          	<div class="graytitle">Reference</div>
+         	 <ul class="keypoint">
+                <li>Zupi E., Zullo F., Marconi D., Sbracia M., Pellicano M., Solima E., Sorrenti G.  Hysteroscopic Endometrial Resection vs. Laparoscopic Supracervical Hysterectomy for Menorrhagia.  American J. Obstet. Gynecol. 2003; 188 (1) p. 7-12.</li>
+          	</ul>                      
+        </div>
+</body>
+</html>

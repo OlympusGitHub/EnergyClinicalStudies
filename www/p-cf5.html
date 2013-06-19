@@ -1,0 +1,739 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+    
+        <div id="p-cf5">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Cutting Forceps 5mm</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" id="goprod"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">Procedures</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-bt">Bench Testing</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh">LAVH</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh">LSH</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt">LSH/TLH/TAH</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-sv">Securing Vessels</a></li>
+              </ul>
+    </div>
+         <div id="p-cf5-bt">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Bench Testing</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-bt-sv">Securing Vessels</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-bt-ts">Thermal Spread</a></li>
+              </ul>
+         </div>
+         <div id="p-cf5-lavh">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>LAVH</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-bl">Blood Loss</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-ie">Instrument Exchange</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-ot">OR Time</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-te">Tissue Effect</a></li>                    
+              </ul>
+         </div>
+         <div id="p-cf5-lsh">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>LSH</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-bl">Blood Loss</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-ie">Instrument Exchange</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-lc">Learning Curve</a></li>                                        
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-ot">OR Time</a></li>
+              </ul>
+         </div>  
+          <div id="p-cf5-ltt">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>LSH/TLH/TAH</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-bl">Blood Loss</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-hs">Length of Hospital Stay</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-ot">OR Time</a></li>
+              </ul>
+         </div>         
+		<div id="p-cf5-sv">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Securing Vessels</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-sv-aa">Additional Articles</a></li>
+              </ul>
+    </div>
+        <div id="p-cf5-bt-sv">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Securing Vessels</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-bt-sv-har">Harmonic</a></li>
+                    <li class="arrow"><a id="0" href="#p-cf5-bt-ts-hel">Harmonic/EnSeal/LigaSure</a></li>
+              </ul>
+    </div>
+         <div id="p-cf5-bt-ts">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Thermal Spread</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-bt-ts-har">Harmonic</a></li>
+              </ul>
+         </div>
+         
+         <div id="p-cf5-lavh-bl">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Blood Loss</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-bl-kle">Kleppinger</a></li>                  
+              </ul>
+         </div>
+         <div id="p-cf5-lavh-ie">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Instrument Exchange</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-ie-kle">Kleppinger</a></li>                 
+              </ul>
+         </div>
+         <div id="p-cf5-lavh-ot">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>OR Time</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-ot-kle">Kleppinger</a></li>
+              </ul>
+         </div>
+          <div id="p-cf5-lavh-te">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Tissue Effect</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lavh-te-kle">Kleppinger</a></li>                    
+              </ul>
+         </div>                 
+         <div id="p-cf5-lsh-bl">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Blood Loss</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-bl-na">N/A</a></li>
+              </ul>
+         </div> 
+         <div id="p-cf5-lsh-ie">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Instrument Exchange</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-ie-na">N/A</a></li>
+              </ul>
+         </div>  
+         <div id="p-cf5-lsh-lc">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Learning Curve</h1>
+                  </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-lc-na">N/A</a></li>                                        
+              </ul>
+         </div>  
+         <div id="p-cf5-lsh-ot">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>OR Time</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">                                        
+                    <li class="arrow"><a id="0" href="#p-cf5-lsh-ot-na">N/A</a></li>
+              </ul>
+         </div>  
+            
+          <div id="p-cf5-ltt-bl">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Blood Loss</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-bl-na">N/A</a></li>
+              </ul>
+         </div>
+         <div id="p-cf5-ltt-hs">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Length of Hospital Stay</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-hs-na">N/A</a></li>
+              </ul>
+         </div>  
+         <div id="p-cf5-ltt-ot">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>OR Time</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-ltt-ot-na">N/A</a></li>
+              </ul>
+         </div>  
+          
+		<div id="p-cf5-sv-aa">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Additional Articles</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cf5-sv-aa-hel">Harmonic, EnSeal, LigaSure</a></li>
+              </ul>
+    </div>
+		<div id="p-cf5-bt-sv-har">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Harmonic</h1>
+                    </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#dodde">Dodde</a></li>
+              </ul>
+    </div>
+         <div id="p-cf5-bt-ts-hel">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Harmonic/EnSeal/LigaSure</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#newcomb">Newcomb</a></li>
+              </ul>
+         </div>
+         <div id="p-cf5-bt-ts-har">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Harmonic</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#dodde">Dodde</a></li>
+              </ul>
+         </div>
+        <div id="p-cf5-lavh-bl-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#wang">Wang</a></li>                  
+              </ul>
+    </div>
+         <div id="p-cf5-lavh-ie-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#wang">Wang</a></li>                 
+              </ul>
+         </div>
+         <div id="p-cf5-lavh-ot-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#wang">Wang</a></li>
+              </ul>
+         </div>
+          <div id="p-cf5-lavh-te-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#wang">Wang</a></li>                    
+              </ul>
+         </div>   
+        <div id="p-cf5-lsh-bl-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#erian">Erian</a></li>
+              </ul>
+    </div> 
+         <div id="p-cf5-lsh-ie-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#erian">Erian</a></li>
+              </ul>
+         </div>  
+         <div id="p-cf5-lsh-lc-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#ghomi">Ghomi</a></li>                                        
+              </ul>
+         </div>  
+         <div id="p-cf5-lsh-ot-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">                                        
+                    <li class="arrow"><a id="0" href="#erian">Erian</a></li>
+                    <li class="arrow"><a id="0" href="#ghomi">Ghomi</a></li>                    
+              </ul>
+         </div>  
+         
+         <div id="p-cf5-ltt-bl-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#hoffman">Hoffman</a></li>
+              </ul>
+         </div>
+         <div id="p-cf5-ltt-hs-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#hoffman">Hoffman</a></li>
+              </ul>
+         </div>  
+         <div id="p-cf5-ltt-ot-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#hoffman">Hoffman</a></li>
+              </ul>
+         </div>  
+         <div id="p-cf5-sv-aa-hel">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Harmonic, EnSeal, LigaSure</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#levy">Levy</a></li>
+              </ul>
+         </div>
+        <div id="dodde">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Dodde</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the tissue temperature at 1 mm from the edge of the Gyrus PKS Cutting Forceps and Ethicon Harmonic ACE (measured in temperature using a thermistor 1 mm from the edge of the device).</li>
+                <li>PKS Cutting Forceps:<br />
+                      - Average maximum temperature at 1 mm from device edge:  56.8&ordm;C<br />
+                      - Average time to achieve hemostasis:  5.7 sec.</li>
+                <li>Harmonic Scalpel:<br />
+                      - Average maximum temperature at 1 mm from device edge:<br />
+                            - Coagulation setting:  57.5&ordm;C<br />
+                            - Coagulation until cut setting:  61.9&ordm;C<br />
+                            - Coagulation and cut setting:  56.4&ordm;C</li>
+                      - Average time to achieve hemostasis:<br />
+                            - Coagulation setting:  5.2 sec.<br />
+                            - Coagulation until cut setting:  10.3 sec.<br />
+                            - Coagulation and cut setting:  6.0 sec.</li>
+                <li>No statistically significant difference between the PKS Cutting Forceps or Ethicon Harmonic ACE in thermal temperatures at 1 mm from device edge.</li>
+                <li>The PKS Cutting Forceps and the Ethicon Harmonic ACE demonstrate "comparable thermal profiles during energized dissection and hemostasis."</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Dodde R., Shih A., Advincula A.  A Novel Technique for Demonstrating the Real-Time Subsurface Tissue Thermal Profile of Two Energized Surgical Instruments.  J. Minimally Invasive Gynecology.  2009; 16 (5); p. 599-603.</li>
+          </ul>                      
+        </div>
+  
+         <div id="erian">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Erian</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Prospective study examined 400 patients that underwent laparoscopic supracervical hysterectomy (LSH).</li>
+                <li>Average OR time:  46.4 min. *OR time is calculated as the time at which CO2 was started to the closure of the laparoscopic ports.</li>
+                <li>Average uterine weight:  138 grams.</li>
+                <li>Average estimated blood loss:  126 mL.</li>
+                <li>Authors believe that the use of the PKS 45 cm Cutting Forceps contribute to reduced blood loss.  The Lap Loop was used for amputation of the uterus.</li>
+                <li>The versatile PK system allows for reduction in instrument change, helping to reduce OR time.</li> 
+                <li>For more information regarding LSH, please reference:  Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Ghomi et al. (2007); Hoffman et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Erian J., Hassan M., Pachydakis A., Chandakas S., Wissa L., Hill N.  Efficacy Of Laparoscopic Subtotal Hysterectomy In The Management Of Menorrhorhagia:  400 Consecutive Cases.  Obstetrics & Gynecology.  2008; 115 (6); p. 742-8.</li>
+          </ul>                      
+        </div>
+         
+              
+        <div id="ghomi">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Ghomi</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Prospective study that examined the learning curve for laparoscopic supracervical hysterectomy (LSH).</li>
+                <li>60 patients underwent LSH procedure.</li>
+                <li>The OR time was significantly reduced from 166 min. to 142.3 min. between the first 30 and last 30 cases.</li>
+                <li>Average uterine weight:  First 30 cases-132.8 grams; last 30 cases-154.6 grams.</li>
+                <li>Average length of hospital stay:  First 30 cases-23.6 hours; last 30 cases-23.3 hours.</li>
+                <li>Upper uterine pedicles are coagulated and transected by using a 5 mm PKS device (device not specified).</li>
+                <li>Harmonic Scalpel (Ethicon) used for amputation and Gynecare morcellator used for specimen removal (device not specified).</li>
+                <li>The authors concluded that 30 cases are needed for proficiency in laparoscopic supracervical hysterectomy and that OR time is reduced with experience.</li>  
+                <li>For more information regarding LSH, please reference:  Erian et al. (2008); Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Hoffman et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+				<li>Ghomi A., Littman P., Prasad A., Einarsson J.  Assessing The Learning Curve for Laparoscopic Supracervical Hysterectomy.  J. of the Society of Laparoendoscopic Surgeons.  2007; 11; p.  190-194. </li>          
+          </ul>                      
+        </div>
+        
+		<div id="hoffman">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Hoffman</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Retrospective study, examined the clinical outcomes of abdominal hysterectomy (TAH), laparoscopic supracervical hysterectomy (LSH) and total laparoscopic hysterectomy (TLH).</li>  
+                <li>TAH-255; LSH-251; TLH-108 patients.
+                <li>Median OR time, statistically significant:  TAH-88 min.; TLH-131 min.; LSH-123 min.</li>
+                <li>Median estimated blood loss, statistically significant:  TAH-150 mL; TLH-50 mL; LSH-50 mL.</li>
+                <li>Length of hospital stay, statistically significant:  TAH-75 hrs.; TLH-30 hrs.; LSH-28 hrs.</li>
+                <li>Significantly less estimated blood loss and a significantly shorter length of stay were observed with minimally invasive procedures when compared to total abdominal hysterectomy.</li>  
+                <li>After previous use of the Harmonic Scalpel, the authors found this tool to be "unsatisfactory...because of excessive bleeding."</li>  
+                <li>The authors report success with the PK Cutting Forceps, finding the PK system to be, "effective for hemostasis, even on large vessels..."</li>
+                <li>The authors prefer advanced bipolar over monopolar energy in proximity to the bowel and bladder because the PK instrumentation appears to cause less thermal injury.</li>
+                <li>For more information regarding LSH, please reference:  Bojahr et al. (2009); Cipullo et al. (2009); Einarsson et al. (2010); Erian et al. (2008); Ghomi et al. (2005); Sarmini et al. (2005); and Zupi et al. (2003).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+				<li>Hoffman C., Kennedy J., Borschel L., Burchette R., Kidd A.  Laparoscopic Hysterectomy:  The Kaiser Permanente San Diego Experience.  J. Minimally Invasive Gynecology.  2005; 1 ; p. 16-24.  </li>          
+          	</ul>                      
+        </div>
+       
+       		<div id="levy">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Levy</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Article is an overview of vessel-sealing devices for laparoscopic procedures including:  PKS Cutting Forceps and Plasma Trissector (Trissector is no longer sold), Harmonic Scalpel, Ligamax 5 Endoscopic Multiple Clip Applier, EnSeal Tissue Sealing and Hemostasis System and EnSeal PTC, and LigaSure V.</li>
+                <li>Dr. Levy's conclusions seem to be based on opinion rather than factual clinical data.<br />
+                      - No numerical data were presented related to burst pressure.  <br />
+                      - Please reference Lim et al. (1999) for systolic blood pressure and the "Securing Vessels" tab.</li>
+                <li>Article does not favorably portray the Gyrus PKS system.</li>  
+                <li>Key Points relating to "Securing Vessels" for the PK System:<br />
+                      - PK devices, specifically the PKS Cutting Forceps, have been providing adequate hemostasis for over 10 years without a need for a vessel-sealing claim.<br />
+                      - The PK platform has the largest array of instrument tips for the surgeon's specific needs.<br />
+                      - There is a 7 mm vessel-sealing claim for the PKS SEAL Open forceps.<br />
+                      - The PKS Cutting Forceps has serrated jaws to grasp onto tissue whereas tissue tends to slip through the jaws with LigaSure.<br />  
+                      - PK is the only platform that provides surgeons with true bipolar cut and bipolar coagulation in one instrument.  LigaSure can coagulate with bipolar but has a monopolar cut with the Advance device.</li>
+                <li>The article references Newcomb et al. (2009), and Lamberton et al. (2008).</li>
+  			</ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Levy, B.  Vessel-Sealing Devices.  OBG Management.  September 2009; 21 (9).</li>
+          </ul>                   
+        </div>   
+        
+  		<div id="newcomb">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Newcomb</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>This paper has been handed out by your competitors.  The purpose of this summary is to give you data to counter the argument that your competitors are making.</li>
+                <li>Examined burst rates of PKS Cutting Forceps, Harmonic, EnSeal, &amp; LigaSure devices in porcine models.  Numbers for Trissector not included in the summary below.</li>
+                <li>No statistical difference between burst pressures of CF and competitors for 2-3mm or 6-7mm vessels.</li> 
+                <li>Mean burst pressure:<br />
+                      - Vessel diameter 2-3 mm (mmHg):<br />  
+                      - SurgRX EnSeal-1025.3<br />
+                      - Gyrus PKS Cutting Forceps-910.3<br />
+                      - LigaSure V with Force Triad-999.4<br />
+                      - Ligamax-819.6<br />
+                      - Harmonic Scalpel-789.9 <br />
+                      - LigaSure V-744.4<br />
+                      - Vessel diameter 4-5 mm  (mmHg): <br /> 
+                      - LigaSure V-1261.5<br />
+                      - Ligamax-940.0<br />
+                      - SurgRX EnSeal-927.9<br />
+                      - LigaSure V with Force Triad-884.7<br />
+                      - Gyrus PKS Cutting Forceps-647.5<br />
+                      - Harmonic Scalpel-390.8<br />
+                      - Vessel diameter 6-7 mm (mmHg):<br />
+                      - Ligamax-756.9 <br />
+                      - SurgRX EnSeal-720.5<br />
+                      - LigaSure V-645.2<br />
+                      - Harmonic Scalpel-532.2 <br />
+                      - LigaSure V with Force Triad-386.5<br />
+                      - Gyrus PKS Cutting Forceps-284.5<br />
+                      - Burst pressures tested are much higher than mean systolic blood pressure or blood pressure of hypertensive person during exercise, which has been documented to max out at approximately 240 mmHg, with a mean value of 189 mmHg.  Mean systolic blood pressure for an average person is 119 mmHg (Lim et al. 1999).</li>
+  			</ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Newcomb W., Hope W., Schmelzer T., Heath J., Norton H., Lincourt A., Heniford B., Iannitti D.  Comparison of Blood Vessel Sealing Among New Electrosurgical and Ultrasonic Devices.  Surgical Endoscopy.  2008; 23;  p.  90-96.  </li>
+          </ul>                   
+        </div>  
+ 
+         <div id="wang">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Wang</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Compared the effectiveness of the PKS Cutting Forceps with the Kleppinger bipolar forceps in laparoscopically assisted vaginal hysterectomy (LAVH).</li>
+				<li>Average blood loss: PKS Cutting Forceps-197 mL; Kleppinger-253 mL (not statistically significant).</li>
+				<li>Average OR time: PKS-87.6 minutes; Kleppinger-93.4 minutes (not statistically significant).</li>
+				<li>PKS Cutting Forceps generated less plume and thermal tissue damage compared to the Kleppinger forceps.</li>  
+				<li>PKS Cutting Forceps demonstrated less sticking and required fewer instrument changes than the Kleppinger forceps.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Wang C., Yuen L., Yen C., Lee C., Soong Y.  Comparison of Efficacy of Pulsed Bipolar System and Conventional Electrosurgery in Laparoscopically Assisted Vaginal Hysterectomy. Laparoendoscopic & Advanced Surgical Techniques.  2005; 15 (4) p. 361-364. </li>
+          </ul>                      
+        </div>                  
+
+	</body>
+</html>

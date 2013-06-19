@@ -1,0 +1,557 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+    <div id="secvess">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Securing Vessels</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cf">Cutting Forceps</a></li>
+              <li class="arrow"><a id="0" href="#sc-cfsns">Cutting Forceps (Size Not Specified)</a></li>
+                <li class="arrow"><a id="0" href="#sc-na">N/A</a></li>
+                <li class="arrow"><a id="0" href="#sc-sof">SEAL Open Forceps (7 mm sealing claim)</a></li>
+                <li class="arrow"><a id="0" href="#sc-ss">SonoSurg</a></li>			
+            </ul>
+    </div>
+        <div id="sc-cf">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps</h1>
+              </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cf-as">Animal Study</a></li>
+                <li class="arrow"><a id="0" href="#sc-cf-bt">Bench Testing</a></li>			
+            </ul>
+        </div>
+        <div id="sc-cfsns">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Cutting Forceps (Size Not Specified)</h1>
+                </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cfsns-bt">Bench Testing</a></li>			
+            </ul>
+        </div>
+        <div id="sc-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+               </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-na-res">Resource for systolic blood pressure</a></li>	
+            </ul>
+        </div>
+        <div id="sc-sof">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>SEAL Open Forceps (7 mm sealing claim)</h1>
+               </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-sof-abt">Animal and Bench Testing</a></li>
+                <li class="arrow"><a id="0" href="#sc-sof-at">Animal Testing</a></li>		
+            </ul>
+        </div>
+        <div id="sc-ss">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>SonoSurg</h1>
+               </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div> 
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-ss-at">Animal Testing</a></li>			
+            </ul>
+        </div> 
+        <div id="sc-cf-as">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal Study</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cf-as-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="sc-cf-bt">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Bench Testing</h1>
+             </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cf-bt-har">Harmonic</a></li>	
+                <li class="arrow"><a id="0" href="#sc-cf-bt-hel">Harmonic/EnSeal/LigaSure</a></li>					
+            </ul>
+        </div>
+        <div id="sc-cfsns-bt">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Bench Testing</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-cfsns-bt-hel">Harmonic/EnSeal/LigaSure</a></li>		
+            </ul>
+        </div>
+        <div id="sc-na-res">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Resource for systolic blood pressure</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-na-res-na">N/A</a></li>	
+            </ul>
+        </div>
+        <div id="sc-sof-abt">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal and Bench Testing</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-sof-abt-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="sc-sof-at">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal Testing</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-sof-at-lig">LigaSure MAX</a></li>		
+            </ul>
+        </div>
+        <div id="sc-ss-at">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Animal Testing</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#sc-ss-at-har">Harmonic</a></li>			
+            </ul>
+        </div>     
+         <div id="sc-cf-as-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#santa-cruz">Santa-Cruz</a></li>
+            </ul>
+        </div>
+        <div id="sc-cf-bt-har">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#dodde">Dodde</a></li>	
+            </ul>
+        </div>
+        <div id="sc-cf-bt-hel">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic/EnSeal/LigaSure</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#newcomb">Newcomb</a></li>					
+            </ul>
+        </div>
+        <div id="sc-cfsns-bt-hel">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic/EnSeal/LigaSure</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lamberton">Lamberton</a></li>		
+            </ul>
+        </div>
+        <div id="sc-na-res-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#lim">Lim</a></li>	
+            </ul>
+        </div>
+        <div id="sc-sof-abt-na">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>N/A</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#presthus">Presthus</a></li>
+            </ul>
+        </div>
+        <div id="sc-sof-at-lig">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>LigaSure MAX</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#gallegos">Gallegos</a></li>		
+            </ul>
+        </div>
+    <div id="sc-ss-at-har">
+		        <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                <h1>Harmonic</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+
+            <ul class="edgetoedge">
+              <li class="arrow"><a id="0" href="#clements">Clements</a></li>			
+            </ul>
+    </div>    
+	<div id="clements">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Clements</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>Examined the bursting pressure of secured arteries and the incidence of failure to adequately secure 4 mm and 5 mm arteries in a porcine model using the SonoSurg and Harmonic ACE instrumentation.</li>
+                <li>Each device divided 44 arteries between 4 and 5 mm.</li>
+                <li>SonoSurg and Harmonic ACE secured 4-5 mm arteries with similar burst pressures, with no statistically significant differences.</li>  
+                <li>SonoSurg and Harmonic ACE secured over 90% of tested vessels.</li>  
+                <li>"There is no difference in mean burst pressure between the two devices when used to [secure] 4 mm and 5 mm arteries.  The incidence of failure to [secure vessels] adequately at initial transaction and failure to achieve a burst pressure of 360 mmHg is the same for each device."</li>  
+                <li>Burst pressures tested are much higher than mean systolic blood pressure or blood pressure of hypertensive person during exercise (worst case scenario), which has been documented to max out at approximately 240 mmHg, with a mean value of 189 mmHg (Lim et al. 1999).  Mean systolic blood pressure for an average person is 119 mmHg (Lim et al. 1999).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+				<li>Clements RH, Palepu R.  In Vivo Comparison Of The Coagulation Capability Of Sonosurg And Harmonic Ace On 4 mm And 5 mm Arteries.  Surg Endosc. 2007 Dec;21(12):  2203-6. </li>          
+			</ul>                      
+        </div>
+   
+        <div id="dodde">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Dodde</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the tissue temperature at 1 mm from the edge of the Gyrus PKS Cutting Forceps and Ethicon Harmonic ACE (measured in temperature using a thermistor 1 mm from the edge of the device).</li>
+                <li>PKS Cutting Forceps:<br />
+                      - Average maximum temperature at 1 mm from device edge:  56.8&ordm;C<br />
+                      - Average time to achieve hemostasis:  5.7 sec.</li>
+                <li>Harmonic Scalpel:<br />
+                      - Average maximum temperature at 1 mm from device edge:<br />
+                            - Coagulation setting:  57.5&ordm;C<br />
+                            - Coagulation until cut setting:  61.9&ordm;C<br />
+                            - Coagulation and cut setting:  56.4&ordm;C</li>
+                      - Average time to achieve hemostasis:<br />
+                            - Coagulation setting:  5.2 sec.<br />
+                            - Coagulation until cut setting:  10.3 sec.<br />
+                            - Coagulation and cut setting:  6.0 sec.</li>
+                <li>No statistically significant difference between the PKS Cutting Forceps or Ethicon Harmonic ACE in thermal temperatures at 1 mm from device edge.</li>
+                <li>The PKS Cutting Forceps and the Ethicon Harmonic ACE demonstrate "comparable thermal profiles during energized dissection and hemostasis."</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Dodde R., Shih A., Advincula A.  A Novel Technique for Demonstrating the Real-Time Subsurface Tissue Thermal Profile of Two Energized Surgical Instruments.  J. Minimally Invasive Gynecology.  2009; 16 (5); p. 599-603.</li>
+          </ul>                      
+        </div>
+   
+        <div id="gallegos">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Gallegos</h1>
+              </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the hemostasis rates of the PKS SEAL Open Forceps and the Valley Lab (Covidien) LigaSure MAX.</li> 
+                <li>In most cases the SEAL Open Forceps outperformed the LigaSure system with regard to burst pressure.</li>
+                <li>Seal failures were seen only with the LigaSure device.  Failure was defined by the inability of a vessel to withstand 360 mmHG for greater than 10 seconds.</li>  
+                <li>PKS SEAL demonstrated a statistically significantly higher likelihood of vessel seal success on primary in-vivo application when compared to the LigaSure MAX.</li>
+                <li>"Gyrus SEAL performs clinically equivalent to LigaSure MAX."</li> 
+                <li>"...effective primary seal rates and excellent burst pressure strength provided by the Gyrus SEAL may reduce OR time and complications by minimizing inadvertent hemorrhage."</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+         	<ul class="keypoint">
+				<li>Gallegos R., Nochek P.,Lahti M., Duning M., Biano R.  In-Vivo Assessment of the Gyrus SEAL Open Forceps Intra-Abdominal Procedures in a Chronic Canine Model.  Presented at AAGL, 2004.</li>          
+            </ul>                      
+        </div>  
+    
+        <div id="lamberton">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lamberton</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>This paper has been handed out by your competitors.  The purpose of this summary is to give you data to counter the argument that your competitors are making.</li>
+                <li>Examined the thermal spread and burst pressures of PK (device not specified, likely the Cutting Forceps), Harmonic ACE, EnSeal PTC, and LigaSure V devices, using 5 mm bovine arteries for testing.</li>
+                <li>PK had the second highest mean burst pressure-290 mmHg, behind LigaSure with 385 mmHg.</li>  
+                <li>"All devices tested resulted in temperatures 2 mm away from tissue that were greater than 40&ordm;C and hence should be used with caution next to vital structures...."</li>  
+                <li>"Sealing times for the LigaSure (10.0 sec) and Gyrus PK (11.1 sec) were statistically faster when compared to EnSeal (19.2 sec) or Harmonic Scalpel (14.3 sec), p for both &lt; 0.001."</li>  
+                <li>Potential limitations with this model include vessels without blood and an ex-vivo experimental model.</li>
+                <li>Thermal spread (measured in temperature using a thermistor 2 mm from the edge of the device).  Gyrus reported at (64.5&ordm;C), LigaSure (55.5&ordm;C), EnSeal (58.9&ordm;C), and Harmonic (49.9&ordm;C).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+            <ul class="keypoint">
+                <li>Lamberton G.R., His R.S., Jin D.H., Lindler T.U., Jellison F.C., Baldwin D.D.  Prospective Comparison of Four Laparoscopic Vessel Ligation Devices.  J. of Endourology.  2008; 22 (10);  p.  2307-12.</li>
+         	</ul>                      
+        </div>      
+    
+        
+		<div id="newcomb">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Newcomb</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>This paper has been handed out by your competitors.  The purpose of this summary is to give you data to counter the argument that your competitors are making.</li>
+                <li>Examined burst rates of PKS Cutting Forceps, Harmonic, EnSeal, &amp; LigaSure devices in porcine models.  Numbers for Trissector not included in the summary below.</li>
+                <li>No statistical difference between burst pressures of CF and competitors for 2-3mm or 6-7mm vessels.</li> 
+                <li>Mean burst pressure:<br />
+                      - Vessel diameter 2-3 mm (mmHg):<br />  
+                      - SurgRX EnSeal-1025.3<br />
+                      - Gyrus PKS Cutting Forceps-910.3<br />
+                      - LigaSure V with Force Triad-999.4<br />
+                      - Ligamax-819.6<br />
+                      - Harmonic Scalpel-789.9 <br />
+                      - LigaSure V-744.4<br />
+                      - Vessel diameter 4-5 mm  (mmHg): <br /> 
+                      - LigaSure V-1261.5<br />
+                      - Ligamax-940.0<br />
+                      - SurgRX EnSeal-927.9<br />
+                      - LigaSure V with Force Triad-884.7<br />
+                      - Gyrus PKS Cutting Forceps-647.5<br />
+                      - Harmonic Scalpel-390.8<br />
+                      - Vessel diameter 6-7 mm (mmHg):<br />
+                      - Ligamax-756.9 <br />
+                      - SurgRX EnSeal-720.5<br />
+                      - LigaSure V-645.2<br />
+                      - Harmonic Scalpel-532.2 <br />
+                      - LigaSure V with Force Triad-386.5<br />
+                      - Gyrus PKS Cutting Forceps-284.5<br />
+                      - Burst pressures tested are much higher than mean systolic blood pressure or blood pressure of hypertensive person during exercise, which has been documented to max out at approximately 240 mmHg, with a mean value of 189 mmHg.  Mean systolic blood pressure for an average person is 119 mmHg (Lim et al. 1999).</li>
+  			</ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Newcomb W., Hope W., Schmelzer T., Heath J., Norton H., Lincourt A., Heniford B., Iannitti D.  Comparison of Blood Vessel Sealing Among New Electrosurgical and Ultrasonic Devices.  Surgical Endoscopy.  2008; 23;  p.  90-96.  </li>
+          </ul>                   
+        </div>  
+   
+        <div id="presthus">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Presthus</h1>
+         </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>Examined the vessel securing ability of the PKS SEAL Open Forceps on skelotonized vessels up to 7 mm in diameter to withstand sustained pressure of 300 mmHg using bench and animal models.</li>  
+                <li>Mean burst pressure, among all vessel diameters:  1052 mmHg.</li>  
+                <li>Thermal spread range, among all vessel diameters:  0.4-2.3 mm from closure site edge.</li>  
+                <li>The PKS SEAL Open Forceps provides efficient vessel securing with the ability to withstand high intraluminal pressure.</li>
+                <li>Bench model test:  Success rate of 95.5% or 64/67 vessels were secured.  Diameters of 4,5,6,7,8, and 10 mm.</li>
+                <li>Animal model test:  Success rate of 95.7% or 44/46 vessels were secured.  Diameters of 2.5, 3, 3.5, 4,5,6, and 7 mm.</li>
+                <li>End point burst pressures were tested in the animal model and ranged from 565 to 1934 mmHg, with a mean of 1052 mmHg.</li>  
+                <li>"Using the open forceps to coagulate tissue rather than conventional clamps decreases the need for instrument exchanges and may ultimately decrease operating time with cost savings."</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Presthus JB, Brooks PG, Kirchhof N.  Vessel Sealing Using A Pulsed Bipolar System And Open Forceps.  J. Am Assoc Gynecol Laparosc. 2003 Nov;10(4):  528-33.</li>
+          </ul>                   
+        </div> 
+   		
+        <div id="lim">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lim</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+            	<li>The purpose of this study is to provide concrete literature on systolic blood pressure to counter arguments on securing vessels against LigaSure and Harmonic.</li>
+				<li>Authors examined the exercise systolic blood pressure in both normotensive and hypertensive patients.</li>
+				<li>Highest systolic BP for hypertensive patients during exercise was approximately 240 mmHg with a mean value of 189 mmHG, well below burst pressure achieved by PKS devices.</li> 
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Lim P., Shiels P, Anderson J, MacDonald T.  Dundee Step Test:  A Simple Method Of Measuring The Blood Pressure Response To Exercise.  J. Hum Hypertens. 1999; 13 (8); p.  521-6.</li>
+          </ul>                   
+        </div>       
+    
+        
+        <div id="santa-cruz">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Santa-Cruz</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>A single application of either the 5 mm and 10 mm PKS Cutting Forceps was sufficient to control and divide the renal artery, vein and gonadal vein in the porcine model with no damage to adjacent structures.</li>
+				<li>5 mm and 10 mm Cutting Forceps successfully coagulated and divided 5 mm, 6.5 mm, and 8.7 mm vessels in 100% of the trials.</li>
+				<li>10 mm Cutting Forceps successfully coagulated and divided coagulated 10.8 mm and 14 mm vessels in 83% of the trials in one application.</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Santa-Cruz R., Auge B., Lallas C., Preminger G.,Polascik T.  Use of Bipolar Forceps to Occlude and Transect Retroperitoneal Vasculature.  J. Endourology.  2003; 17 (3); p. 181-185. </li>
+          </ul>                   
+        </div>       
+    
+</body>
+</html>

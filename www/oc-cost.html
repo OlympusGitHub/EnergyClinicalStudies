@@ -1,0 +1,403 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+
+        <div id="costs">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Costs</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;" id="goback"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Products</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-na">N/A</a></li>
+            </ul>
+        </div>
+        <div id="co-na">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>N/A</h1>
+            </div>
+            		<div class="reference">
+                    	<a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    	<span class="ref-text">Procedures</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>     
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-na-lap_hyst">Lap. Hysterectomy</a></li>
+                <li class="arrow"><a id="0" href="#co-na-myom">Myomectomy</a></li>
+                <li class="arrow"><a id="0" href="#co-na-na">N/A</a></li>
+                <li class="arrow"><a id="0" href="#co-na-pros">Prostatectomy</a></li>
+                <li class="arrow"><a id="0" href="#co-na-vhl">Vaginal Hyst./ Laparoscopic Hyst.</a></li>
+            </ul>
+        </div>
+         <div id="co-na-lap_hyst">
+         	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lap. Hysterectomy</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-lap_hyst-davin">da Vinci</a></li>
+            </ul>
+        </div>
+		<div id="co-na-myom">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Myomectomy</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-myom-davin">da Vinci</a></li>
+            </ul>
+        </div>
+		<div id="co-na-na">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>N/A</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-na-davin">da Vinci</a></li>
+            </ul>
+        </div>
+		<div id="co-na-pros">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Prostatectomy</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-pros-davin">da Vinci</a></li>
+            </ul>
+        </div>
+        <div id="co-na-vhl">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Vaginal Hyst./ Laparoscopic Hyst.</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#co-na-vhl-na">N/A</a></li>
+            </ul>
+        </div>
+ 		<div id="co-lap_hyst-davin">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		     <div class="toolbar">
+                <h1>da Vinci</h1>
+             </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#nezhat">Nezhat</a></li>
+                <li class="arrow"><a id="0" href="#pasic">Pasic</a></li>                
+            </ul>
+        </div>
+<div id="co-myom-davin">
+	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>da Vinci</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#advincula">Advincula</a></li>
+            </ul>
+        </div>
+<div id="co-na-davin">
+	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>da Vinci</h1>
+            </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#barbash">Barbash</a></li>
+            </ul>
+        </div>
+<div id="co-pros-davin">
+	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>da Vinci</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#bolenz">Bolenz</a></li>
+                <li class="arrow"><a id="0" href="#steinberg">Steinberg</a></li>                
+            </ul>
+        </div>
+    <div id="co-na-vhl-na">
+		<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>N/A</h1>
+              </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">References</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+            <ul class="edgetoedge">
+                <li class="arrow"><a id="0" href="#warren">Warren</a></li>                
+            </ul>
+        </div>
+        <div id="advincula">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Advincula</h1><!-- what should the label be in the topbar? -->         
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">                                   
+                <li>Examined the surgical outcomes of myomectomy through the traditional laparotomy (29 patients) and robot assist laparoscopy approaches (29 patients).</li>
+                <li>Although the hospital and professional costs were significantly greater for the robotic approach, the professional reimbursement was not significantly different compared to the reimbursement of the open approach.  This shows that in this study the surgeon was not compensated for the increased time the robotic approach required.<br />
+                      - Total charges for robot assisted laparoscopic myomectomy:  $36,030 
+                         Hospital $30,084; Professional $5,946.<br />
+                      - Total reimbursement for robot assisted laparoscopic myomectomy:  $15,444 
+                         Hospital $13,181; Professional $2,263. <br /> 
+                      - Total charges for open myomectomy:  $18,065. 
+                         Hospital $13,401; Professional $4,664. <br />
+                      - Total reimbursement for open myomectomy:  $8,857 
+                         Hospital $7,015; Professional $1,842. </li> 
+                <li>Difference between total cost vs. total reimbursement:  Robot:  20,586; Open:  9,028.</li>
+                <li>Statistically significant difference between robot and open groups.
+                      - Average blood loss:  Robot:  195.7 mL.; Open:  364.7 mL.<br />
+                      - Length of stay:  Robot:  1.48 days; Open:  3.62 days.<br />
+                      - OR time:  Robot:  263.75 min.; Open:  154.41 min.<br /></li>
+                <li>Due to 5-year depreciation costs model at the study's institution, the robot added an average of $10, 568.94 to every robot case. </li>             
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+			<li>Advincula A., Xu X., Goudeau S., Ransom S.  Robot-assisted Laparoscopic Myomectomy versus Abdominal Myomectomy:  A Comparison of Short-Term Surgical Outcomes and Immediate Costs.   J. Minimally Invasive Gynecology.  2007; 14 (6); p.  698-704. </li>
+          </ul>                      
+        </div>
+        
+    
+        <div id="barbash">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Barbash</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>
+            <ul class="keypoint">
+                <li>Examined the variable cost of conducting a robot assisted procedure across 20 types of surgery, including gynecology.<br />   
+                      - Mean cost per procedure for robotic laparoscopic hysterectomy:  $8,951.<br />  
+                      - No data on what these costs include.<br />
+                      - For more details on cost of the robot for gynecological procedures, please reference the following authors:  Advincula et al. (2007) and Pasic et al. (2010).</li>
+                <li>Learning curve of 150-250 procedures depending on procedure and surgeon skill level.<br />
+                      - For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2008), Payne et al. (2008), and Steinberg et al. (2008).</li>
+                <li>The additional cost for the robot assisted procedure is 6% (13% when including the amortized cost of the robot itself) of the cost of the procedure in 2007.</li>  
+                <li>Relating to prostatectomy procedure:  "...evidence suggests that despite the short-term benefits, robotic technology may not have improved patient outcomes or quality of life in the long run".</li>  
+                <li>"Number of robot assisted procedures that are performed worldwide has nearly tripled since 2007, from 80,000 to 205,000."</li> 
+                <li>Between 2007 and 2009, the number of da Vinci systems that were installed in U.S. hospitals grew by approximately 75%, from almost 800 to around 1400, while the number abroad doubled from 200 to nearly 400.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Barbash G., Glied S.  New Technology and Health Care Costs - The Case of Robot-Assisted Surgery.  The New England Journal of Medicine.  2010; 363 (8); p.  701-704.</li>
+          </ul>                      
+        </div>
+     
+        <div id="bolenz">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Bolenz</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Examined the cost of robot assisted laparoscopic prostatectomy (robotic), laparoscopic radical prostatectomy (laparoscopic) and open retropubic radical prostatectomy (open).</li>  
+                <li>643 patients; 262 robot, 220 laparoscopic and 161 open.</li>
+                <li>Total cost per patient for robotic prostatectomy:  $9,450 ($2698+$6752) *Assuming an average of 126 cases per year.<br />
+                      1.  Cost of purchase and maintenance of robot:  $2698 per patient *Assuming the sum amortized purchase price of robot and annual maintenance fee divided by an average of 126 cases per year.<br />  
+                           &nbsp;&nbsp;- Purchase and maintenance costs:  $340,000 per year (assumed $1.4 Million for robot; $140,000 per year maintenance fee, seven (7) year amortization, and 126 procedures per year).<br />
+                      2.  Median direct cost, per patient:  Open-$4437, Laparoscopic-$5687, Robotic-$6752.<br />
+                           - Direct costs are costs generated by each department involved in patient care- anesthesia, radiology, OR, surgical supplies, pathology, medication, laparotomy, and room and board.</li> 
+                <li>Two (2) costs that contribute to higher median cost for robotic prostatectomy are surgical supply and OR costs.<br />
+                	  1.  Surgical supply cost per procedure:  Open-$185, Laparoscopic-$725, Robotic-$2015.<br />
+                           &nbsp;&nbsp;- Laparoscopic prostatectomy equipment - routine disposable laparoscopic equipment (eg. trocars, specimen entrapment sac, etc.)<br /> 
+                           &nbsp;&nbsp;- Robotic prostatectomy equipment - specific surgical supply costs were for Hot Shears, large needle drivers, grasper, and ProGrasp- costing $220 per use (cost averaged over 10 uses).<br />  
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Study utilized the PKS Endowrist Dissector, costing $250 per use (cost averaged over 10 uses).<br />
+                      2.  OR cost:  Open-$1611, Laparoscopic-$2453, Robotic-$2798.
+                <li>Assuming equivalent OR time, robotic prostatectomy costs at least $1000 more due to surgical equipment compared to laparoscopic and open prostatectomy.</li>
+          </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Bolenz C., Gupta A., Hotze T., Ho R., Cadeddu J., Roehrborn C., Lotan Y.  Cost Comparison of Robotic, Laparoscopic, and Open Radical Prostatectomy for Prostate Cancer.  J. Of European Urology.  2010; 57; p.  453-458.  </li>
+          </ul>          
+        </div>
+         
+		<div id="nezhat">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Nezhat</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>               
+            <ul class="keypoint">
+                <li>Examined the surgeon experience with robotic assisted laparoscopy in a variety of gynecological procedures. </li> 
+                <li>Disadvantages of robot reported by this study:  Cost, bulkiness, and availability of the robot in different hospitals, and the return on investment challenges.</li>  
+                <li>The robot may compensate for the shortcomings of less-skilled laparoscopists. </li> 
+                <li>Authors reported that the improved dexterity of the robot facilitated the suturing aspects of the surgery.</li>  
+                <li>Cost of Robot - $1.4 million, excluding annual maintenance fees and the cost of semi-reposable instruments.<br />
+                      - No additional cost data details given in study.</li>
+                <li>Additional costs include extra OR time needed to assemble, disassemble, and prepare for the robotic portion of the surgery.</li>  
+                <li>For more details on cost of the robot for gynecological procedures, please reference the following authors:  Advincula et al. (2007), Barbash et al. (2010), and Pasic et al. (2010).</li>
+  			</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Nezhat C., Saberi N.S., Shahmohamady B., Nezhat F.  Robotic-Assisted Laparoscopy In Gynecological Surgery.  J. of the Society of Laparoendoscopic Surgeons.  2006; 10 (3); p.  317-20.</li>
+          </ul>                      
+        </div>
+  
+		<div id="pasic">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Pasic</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>Analysis of 36,188 patients from 358 hospitals undergoing hysterectomy in both an inpatient and outpatient setting.</li>
+                <li>Examined the clinical and economic outcomes in women undergoing laparoscopic hysterectomy performed with and without robotic assistance in an inpatient or outpatient setting.</li>  
+                <li>"The study demonstrated that there is no major or even incremental clinical benefit associated with robot assistance when considering perioperative and postoperative complications.  Robot assisted procedures are, however, associated with higher hospital costs, with an average incremental per procedure cost in excess of $2,600.  Robot assisted procedures are also associated with longer surgery times..."</li>  
+                <li>Hysterectomy procedure mix:  95% laparoscopic approach; 5% robotic approach.  *Note:  A sensitivity analysis was completed to account for the difference in the numbers of non-robotic and robotic procedures, and all results were similar to those facilities that did not have a robot.</li>  
+                <li>Average Cost Difference, statistically significant:<br />
+                      - Inpatient cost:  Robot assisted-$9640; laparoscopic (without robot)-$6973.<br />
+                      - Outpatient cost:  Robot assisted-$7920; laparoscopic (without robot)-$5949.<br />
+                      - Note:  Cost measures did not include cost to acquire the robot unit ($1-2.3 million) or annual maintenance fees ($100,00-180,000 per year).  Costs reported in the paper are actual costs incurred by hospital for all treatments and services related to the hysterectomy.</li> 
+                <li>Average Surgery Time, statistically significant:<br />
+                      - Inpatient OR time:  Robot assisted-3.22 hours; laparoscopic (without robot)-2.82 hours.<br />
+                      - Outpatient OR time:  Robot assisted-2.99 hours; laparoscopic (without robot)-2.46 hours.<br />
+                      - Note:  No information provided on how OR time was measured.</li>
+                <li>Average length of stay, statistically significant:  Robot assisted-1.37 days; laparoscopic-1.49 days.<br />
+                      - Although the average length of stay was statistically significant, the authors reported that the difference did not represent clinical significance.  </li>
+  			</ul>
+        	<div class="graytitle">Reference</div>
+          	<ul class="keypoint">
+                <li>Pasic R.P., Rizzo J.A., Fang H., Ross S.,  Moore M., Gunnarsson C.  Comparing Robot-Assisted with Conventional Laparoscopic Hysterectomy:  Impact On Cost And Clinical Outcomes.  J. Minimally Invasive Gynecology.  2010; 17 (6); p.  730-738.</li>
+          	</ul>
+        </div>  
+
+        <div id="steinberg">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Steinberg</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>Based on a theoretical model and literature review of 8 robotic-assisted prostatectomy studies.</li> 
+                <li>Examined the costs associated with the learning curve of the robotic prostatectomy.</li>  
+                <li>Based on the literature review, the learning curve for robotic prostatectomy ranged from 20 to more than 250 cases.</li>  
+                <li>In this study, the learning curve was considered the time from adoption of robotic prostatectomy until a statistically significant lowest operative time was reached.</li>  
+                <li>Costs were calculated by adding the cost of the operating room time and anesthesia services over the duration of the learning curve.  Costs associated with the acquisition of the robot, instrumentation, service agreement, and drapes were not included in this cost calculation.</li>  
+                <li>Over an average learning curve of 77 cases for robotic prostatectomy the total learning curve costs:  $217,034. </li>
+                <li>Considering the procedure volume for the majority of urologists, it would take approximately 2 years to reach 77 cases.</li>    
+                <li>This literature review did not quote reimbursement rates or instrumentation utilized in the various studies.</li>
+                <li>For more information regarding robot learning curves please reference:  Carreyrou (2010), Lenihan et al. (2010), and Payne (2008).</li>
+                <li>For more details on cost of the robot for gynecological procedures, please reference the following authors:  Advincula et al. (2007), Barbash et al. (2010), and Pasic et al. (2010).</li>
+            </ul>
+        <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Steinberg P., Merguerian P., Bihrle W., Seigne J.  The Cost of Learning Robotic-Assisted Prostatectomy.  Urology.  2007; 72; p.  1068-1072.</li>
+          </ul>                   
+        </div>     
+        <div id="warren">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Warren</h1>        	
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>
+            <ul class="keypoint">
+                <li>Examined the clinical and economic outcomes of minimally invasive procedures - laparoscopic (LH) and vaginal hysterectomy (VH) with the traditional open abdominal hysterectomy (AH).</li> 
+                <li>Outcomes:<br />
+                      - Complication rate, statistically significant:  AH-18%; LH-15%; VH-14%.<br />
+                      - Length of stay, statistically significant:  AH-3.66 days; LH-1.56 days; VH-2.21.</li>
+                <li>Expenditures:<br /> 
+                      - Average expenditures per procedure and follow up care, statistically significant:  AH-$11,390; LH-$11,508; VH-$10,177.<br /> 
+                      - Total expenditures for healthcare associated with a patient's hysterectomy.  Included all insurer and patient payments and included the cost of the surgical procedure, e.g.-follow-up office visits, emergency department visits, and hospitalizations.<br /> 
+                      - If just 20% of open abdominal hysterectomies are converted to minimally invasive laparoscopic outpatient procedures, this would reduce total spending by $2,313 per procedure, which would translate to a total reduction of 3.7 billion on the healthcare system.</li>  
+                <li>Patients are more likely to experience bleeding episodes and other complications after AH; infections are more frequent, as well as longer hospital stays.</li>  
+                <li>LH and VH are associated with shorter hospitalizations and lower infection rates, and reduced procedure-specific complication rates. </li> 
+                <li>Outpatient LH and VH require significantly less expenditures than inpatient AH, suggesting large savings could be realized by shifting appropriate candidates towards minimally invasive hysterectomy. </li>
+  			</ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Warren L., Ladapo J.,Borah B.,Gunnarsson C.  Open Abdominal versus Laparoscopic and Vaginal Hysterectomy:  Analysis of a Large United States Payer Measuring Quality and Cost of Care.  J. Minimally Invasive Gynecology.  2009; 16 (5); p.  581-588.</li>
+          </ul>                      
+        </div>     
+     
+</body>
+</html>

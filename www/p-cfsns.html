@@ -1,0 +1,407 @@
+<html>
+    <head>
+        <title>Gyrus</title>
+        
+		<!-- Start CSS -->
+		<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="gyrus.css">
+        
+		<script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="gyrus.js"></script>
+		<script type="text/javascript" src="phonegap.0.9.4.min.js" charset="utf-8"></script>
+				
+    </head>
+    
+    <body>
+    
+        <div id="p-cfsns">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Cutting Forceps Size Not Specified</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" id="goprod"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">Procedures</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn">GYN Oncology</a></li>
+                    <li class="arrow"><a id="0" href="#p-cfsns-sv">Securing Vessels</a></li>                    
+                    <li class="arrow"><a id="0" href="#p-cfsns-tlh">TLH</a></li>                    
+              </ul>
+    </div>
+         <div id="p-cfsns-gyn">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>GYN Oncology</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;"  id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-bl">Blood Loss</a></li>
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-hs">Length of Hospital Stay</a></li>                    
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-ot">OR Time</a></li>                    
+              </ul>
+         </div>
+         <div id="p-cfsns-sv">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Securing Vessels</h1>
+                 </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;"  id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-sv-aa">Additional Articles</a></li>
+                    <li class="arrow"><a id="0" href="#p-cfsns-sv-bt">Bench Testing</a></li>                    
+              </ul>
+         </div>
+         <div id="p-cfsns-tlh">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>TLH</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>                  
+                    <span class="ref-text">Outcomes</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-tlh-aas">Additional Articles and Sales Literature</a></li>                    
+              </ul>
+         </div>
+      	 <div id="p-cfsns-gyn-bl">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Blood Loss</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-bl-kle">Kleppinger</a></li>
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-bl-na">N/A</a></li>                    
+              </ul>
+         </div>
+          <div id="p-cfsns-gyn-hs">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Length of Hospital Stay</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-hs-na">N/A</a></li>                    
+              </ul>
+         </div>
+          <div id="p-cfsns-gyn-ot">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>OR Time</h1>
+               </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">                  
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-ot-kle">Kleppinger</a></li>
+                    <li class="arrow"><a id="0" href="#p-cfsns-gyn-ot-na">N/A</a></li>                                                            
+              </ul>
+         </div>
+              
+         <div id="p-cfsns-sv-aa">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Additional Articles</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-sv-aa-khel">Kleppinger, Harmonic, EnSeal, LigaSure</a></li>
+              </ul>
+         </div>
+         <div id="p-cfsns-sv-bt">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Bench Testing</h1>
+                </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-sv-bt-hel">Harmonic/EnSeal/LigaSure</a></li>                    
+              </ul>
+         </div>
+          
+         <div id="p-cfsns-tlh-aas">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Additional Articles and Sales Literature</h1>
+                 </div>
+                    <div class="reference">
+                        <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                        <span class="ref-text">Competition</span>
+                        <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                    </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#p-cfsns-tlh-aas-na">N/A</a></li>                    
+              </ul>
+         </div>
+      	 <div id="p-cfsns-gyn-bl-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#lee">Lee</a></li>
+              </ul>
+         </div>
+         <div id="p-cfsns-gyn-bl-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#fanning">Fanning</a></li>                    
+              </ul>
+         </div>
+          <div id="p-cfsns-gyn-hs-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#fanning">Fanning</a></li>                    
+              </ul>
+         </div>
+         <div id="p-cfsns-gyn-ot-kle">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">                  
+                    <li class="arrow"><a id="0" href="#lee">Lee</a></li>
+              </ul>
+         </div>
+         <div id="p-cfsns-gyn-ot-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">                  
+                    <li class="arrow"><a id="0" href="#fanning">Fanning</a></li>                                                            
+              </ul>
+         </div>   
+         <div id="p-cfsns-sv-aa-khel">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Kleppinger, Harmonic, EnSeal, LigaSure</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#brill">Brill</a></li>
+              </ul>
+         </div>
+         <div id="p-cfsns-sv-bt-hel">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>Harmonic/EnSeal/LigaSure</h1>
+               </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#lamberton">Lamberton</a></li>                    
+              </ul>
+         </div>
+         
+         
+         <div id="p-cfsns-tlh-aas-na">
+              <div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div> 
+                <div class="toolbar">
+                    <h1>N/A</h1>
+                </div>
+                <div class="reference">
+                    <a style="float:left;" class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                    <span class="ref-text">References</span>
+                    <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+                </div>
+              <ul class="edgetoedge">
+                    <li class="arrow"><a id="0" href="#advincula">Advincula</a></li>                    
+              </ul>
+         </div>  
+        <div id="advincula">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Advincula</h1><!-- what should the label be in the topbar? -->         
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>This article provides a step by step description of the surgical approach and practical tips for the total laparoscopic hysterectomy (TLH) procedure.</li>
+				<li>Surgeon uses the PKS Cutting Forceps for hemostasis during the procedure and a monopolor device for the colpotomy.</li>
+				<li>The author mentions an advanced bipolar device can be used on the colpotomy but does not identify the device.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+			<li>Advincula, A.  Total Laparoscopic Hysterectomy:  Practical Tips and Strategies.  Female Patient.</li>
+          </ul>                      
+        </div>
+        
+        
+        <div id="brill">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Brill</h1>
+             </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>This article is written as a transcript of a conversation among a few prominent gynecological surgeons.</li> 
+                <li>They discuss the advantages of advanced radio frequency energy in gynecological surgery.</li>  
+                <li>"The Gyrus [instrumentation] is the closest cousin to the Kleppinger and therefore the most intuitive of these new devices for the gynecologic surgeon to use."</li>  
+                <li>Dr. Bertrand suggests that the Gyrus PKS Cutting Forceps are, "suitable for surgeons who wish to move on to more advanced technology and have experience using the Kleppinger device."</li> 
+                <li>All surgeons quoted in article have disclosures with Ethicon.</li>
+            </ul>
+            <div class="graytitle">Reference</div>
+            <ul class="keypoint">
+                <li>Brill A., Bertrand J., McCarus S.  Advanced Energy Systems For Laparoscopic Gynecology Procedures.  OBG Management.  November 2009; 21 (11).</li>
+            </ul>
+        </div>  
+        <div id="fanning">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Fanning</h1>
+           </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                  
+            <ul class="keypoint">
+                <li>This study can be used with surgeons who may use the robot or be considering the robot for cytoreduction by showing that laparoscopic cytoreduction utilizing the PKS Cutting Forceps is an effective approach for ovarian cancer.</li>
+                <li>11 patients underwent laparoscopic cytoreduction.</li>
+                <li>Median OR time:  2.5 hr.</li>
+                <li>Median blood loss:  275 mL.</li> 
+                <li>Median length of stay:  1 day.</li>
+                <li>Median ovarian size was 5 cm and median omental metastasis was 14 cm.</li>  
+                <li>Laparoscopic cytoreduction for the treatment of primary advanced ovarian cancer with 82% of cases successfully debulked laparoscopically without conversion to laparotomy.</li>  
+                <li>When compared to cytoreduction via laparotomy, laparoscopic cytoreduction reported as 28% shorter OR time, four (4) times shorter average length of stay, and 61% reduction in postoperative complications.</li>  
+                <li>Secondary cytoreductions are frequently performed at the time of tumor recurrence.  Laparoscopic cytoreduction may allow for secondary cytoreductions to be performed more safely and successfully due to the reduced postoperative adhesions.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+               <li>Fanning J.,Hojat R., Johnson J., Fenton B.  Laparoscopic Cytoreduction for Primary Advanced Ovarian Cancer.  J. Society of Laparoendoscopic Surgeons.  2010; 14 (35); p.  80-82</li>
+          </ul>                      
+        </div>
+        
+        <div id="lamberton">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lamberton</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                   
+            <ul class="keypoint">
+                <li>This paper has been handed out by your competitors.  The purpose of this summary is to give you data to counter the argument that your competitors are making.</li>
+                <li>Examined the thermal spread and burst pressures of PK (device not specified, likely the Cutting Forceps), Harmonic ACE, EnSeal PTC, and LigaSure V devices, using 5 mm bovine arteries for testing.</li>
+                <li>PK had the second highest mean burst pressure-290 mmHg, behind LigaSure with 385 mmHg.</li>  
+                <li>"All devices tested resulted in temperatures 2 mm away from tissue that were greater than 40&ordm;C and hence should be used with caution next to vital structures...."</li>  
+                <li>"Sealing times for the LigaSure (10.0 sec) and Gyrus PK (11.1 sec) were statistically faster when compared to EnSeal (19.2 sec) or Harmonic Scalpel (14.3 sec), p for both &lt; 0.001."</li>  
+                <li>Potential limitations with this model include vessels without blood and an ex-vivo experimental model.</li>
+                <li>Thermal spread (measured in temperature using a thermistor 2 mm from the edge of the device).  Gyrus reported at (64.5&ordm;C), LigaSure (55.5&ordm;C), EnSeal (58.9&ordm;C), and Harmonic (49.9&ordm;C).</li>
+            </ul>
+          	<div class="graytitle">Reference</div>
+            <ul class="keypoint">
+                <li>Lamberton G.R., His R.S., Jin D.H., Lindler T.U., Jellison F.C., Baldwin D.D.  Prospective Comparison of Four Laparoscopic Vessel Ligation Devices.  J. of Endourology.  2008; 22 (10);  p.  2307-12.</li>
+         	</ul>                      
+        </div>      
+                               
+		<div id="lee">
+        	<div class="banner"><img src="themes/jqt/img/UINavigationBar.png" /></div>
+		    <div class="toolbar">
+                <h1>Lee</h1>
+            </div>
+            <div class="reference">
+                <a style="float:left;"class="button back" href="#"><img src="themes/jqt/img/btn-back.JPG" /></a>
+                <span class="ref-text">Key Point</span>
+                <a style="float:right;" id="ocback"><img src="themes/jqt/img/btn-home.JPG"/></a>
+            </div>                    
+            <ul class="keypoint">
+                <li>When comparing the metrics of blood loss, OR time, and postoperative complications in laparoscopic radical hysterectomy, pulsed bipolar energy (PKS)is more effective than conventional bipolar electrosurgery (Kleppinger).</li>
+                <li>Significantly less blood loss in the pulsed bipolar group (PKS Cutting Forceps):<br />
+                    - Blood loss:  PKS-397 mL.; Kleppinger-565 mL.</li>
+                <li>Significantly less OR time in the pulsed bipolar group (PKS Cutting Forceps):<br />
+                    - OR time:  PKS-172 min.; Kleppinger-229 min.</li>
+                <li>PKS system, "eliminates the risk of electrical injury", allows for "fewer instrument changes", and "does not stick to coagulated tissue and relatively less extensive thermal damage makes meticulous hemostasis possible."</li>
+                <li>"PlasmaKinetic cutting forceps showed a cutting ability equal to that of [conventional bipolar] electrosurgery, less plume generation, and less thermal tissue damage."</li>
+                <li>The PKS Cutting Forceps reduce the workload for the surgeon by allowing "simultaneous performance of hemostasis and division" in one instrument.</li> 
+                <li>Paper does not state thermal margin figures.</li>
+            </ul>
+          <div class="graytitle">Reference</div>
+          <ul class="keypoint">
+                <li>Lee C.L., Huang K.G., Wang C. J., Lee P.S., Hwang L.L.  Laparoscopic Radical Hysterectomy Using Bipolar System:  Comparison with Conventional Bipolar Electrosurgery.  Gynecologic Oncology.  2007; 105; p. 620-624.  </li>
+          </ul>                   
+        </div> 
+                   
+
+	</body>
+</html>
